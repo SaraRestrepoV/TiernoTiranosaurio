@@ -12,3 +12,6 @@ C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoT
 C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.pdb
 C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.PorCodigo.resources
 C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.PorNombre.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Facturacion.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Agregar.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Operaciones.resources

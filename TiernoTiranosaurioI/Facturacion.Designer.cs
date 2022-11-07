@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturacion));
             this.btBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.txCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +42,11 @@
             this.txCantidad = new System.Windows.Forms.TextBox();
             this.btCargar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IdMascota = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,12 +56,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.IdMascota = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,6 +79,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 62);
             this.panel1.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Bebas Neue", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(30, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(222, 31);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Módulo de facturación";
             // 
             // txCodigo
             // 
@@ -173,6 +183,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(532, 150);
             this.dataGridView1.TabIndex = 11;
             // 
+            // IdMascota
+            // 
+            this.IdMascota.HeaderText = "IdMascota";
+            this.IdMascota.Name = "IdMascota";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Subtotal
+            // 
+            this.Subtotal.HeaderText = "Subtotal";
+            this.Subtotal.Name = "Subtotal";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -260,41 +295,6 @@
             this.button1.Text = "Vender";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // IdMascota
-            // 
-            this.IdMascota.HeaderText = "IdMascota";
-            this.IdMascota.Name = "IdMascota";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Subtotal
-            // 
-            this.Subtotal.HeaderText = "Subtotal";
-            this.Subtotal.Name = "Subtotal";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bebas Neue", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(30, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(222, 31);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Módulo de facturación";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__3__removebg_preview;
@@ -332,6 +332,7 @@
             this.Controls.Add(this.txCodigo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btBuscar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Facturacion";
             this.Text = "Facturacion";
             this.panel1.ResumeLayout(false);

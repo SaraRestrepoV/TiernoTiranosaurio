@@ -62,6 +62,7 @@ namespace TiernoTiranosaurioI
                         lbContraseña.Visible = true;
                         txUsuario.Enabled = false;
                         button1.Visible = false;
+                        txContraseña.Focus();
                     }
                     else
                     {
@@ -123,6 +124,11 @@ namespace TiernoTiranosaurioI
             {
                 MessageBox.Show("Error en la conexión " + ex.Message);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
