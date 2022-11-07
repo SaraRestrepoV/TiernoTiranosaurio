@@ -1,0 +1,14 @@
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\bin\Debug\TiernoTiranosaurioI.exe.config
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\bin\Debug\TiernoTiranosaurioI.exe
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\bin\Debug\TiernoTiranosaurioI.pdb
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.AssemblyReference.cache
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.SuggestedBindingRedirects.cache
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Login.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Menú.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Properties.Resources.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.GenerateResource.cache
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.CoreCompileInputs.cache
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.exe
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.pdb
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.PorCodigo.resources
+C:\Users\srest\OneDrive\Documentos\Universidad\Programación de software\TiernoTiranosaurioI\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.PorNombre.resources
