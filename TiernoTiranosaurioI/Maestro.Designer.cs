@@ -34,9 +34,6 @@
             this.tsSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsOperaciones = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.tsCotizacion = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +73,7 @@
             // 
             this.tsSalir.Image = ((System.Drawing.Image)(resources.GetObject("tsSalir.Image")));
             this.tsSalir.Name = "tsSalir";
-            this.tsSalir.Size = new System.Drawing.Size(180, 22);
+            this.tsSalir.Size = new System.Drawing.Size(96, 22);
             this.tsSalir.Text = "Salir";
             this.tsSalir.Click += new System.EventHandler(this.tsSalir_Click);
             // 
@@ -93,36 +90,11 @@
             // 
             // tsOperaciones
             // 
-            this.tsOperaciones.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.actualizarToolStripMenuItem,
-            this.agregarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
             this.tsOperaciones.Image = ((System.Drawing.Image)(resources.GetObject("tsOperaciones.Image")));
             this.tsOperaciones.Name = "tsOperaciones";
             this.tsOperaciones.Size = new System.Drawing.Size(180, 22);
             this.tsOperaciones.Text = "Operaciones";
             this.tsOperaciones.Click += new System.EventHandler(this.tsOperaciones_Click);
-            // 
-            // actualizarToolStripMenuItem
-            // 
-            this.actualizarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("actualizarToolStripMenuItem.Image")));
-            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // agregarToolStripMenuItem
-            // 
-            this.agregarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("agregarToolStripMenuItem.Image")));
-            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.agregarToolStripMenuItem.Text = "Agregar";
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem.Image")));
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // toolStripSeparator1
             // 
@@ -175,7 +147,7 @@
             // 
             this.porCódigoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("porCódigoToolStripMenuItem1.Image")));
             this.porCódigoToolStripMenuItem1.Name = "porCódigoToolStripMenuItem1";
-            this.porCódigoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porCódigoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.porCódigoToolStripMenuItem1.Text = "Por código";
             this.porCódigoToolStripMenuItem1.Click += new System.EventHandler(this.porCódigoToolStripMenuItem1_Click);
             // 
@@ -183,7 +155,7 @@
             // 
             this.porNombreToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("porNombreToolStripMenuItem1.Image")));
             this.porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            this.porNombreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porNombreToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.porNombreToolStripMenuItem1.Text = "Por nombre";
             this.porNombreToolStripMenuItem1.Click += new System.EventHandler(this.porNombreToolStripMenuItem1_Click);
             // 
@@ -233,9 +205,6 @@
         private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsSalir;
         private System.Windows.Forms.ToolStripMenuItem tsOperaciones;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsVentas;
         private System.Windows.Forms.ToolStripMenuItem tsCotizacion;
         private System.Windows.Forms.ToolStripMenuItem tsFactura;

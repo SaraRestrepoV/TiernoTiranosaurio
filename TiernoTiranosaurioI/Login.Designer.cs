@@ -34,10 +34,10 @@
             this.txUsuario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txContraseña = new System.Windows.Forms.TextBox();
             this.btIniciar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,6 +82,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(830, 217);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -92,6 +93,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 222);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(49, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 177);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // txContraseña
             // 
@@ -123,16 +134,6 @@
             this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 177);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
