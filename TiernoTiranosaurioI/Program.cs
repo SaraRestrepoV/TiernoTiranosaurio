@@ -16,7 +16,7 @@ namespace TiernoTiranosaurioI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Operaciones());
+            Application.Run(new Facturacion());
         }
     }
 }
