@@ -27,7 +27,7 @@ namespace TiernoTiranosaurioI
         {
             try
             {
-                if (txCodigo.Text != "" && txNombre.Text != "" && txPrecio.Text != "" && txCantidad.Text != "") ;
+                if (txCodigo.Text != "" && txNombre.Text != "" && txPrecio.Text != "" && txCantidad.Text != "")
                 {
                     ListaVenta[Fila, 0] = txCodigo.Text;
                     ListaVenta[Fila, 1] = txNombre.Text;
@@ -42,6 +42,10 @@ namespace TiernoTiranosaurioI
                     txCodigo.Text = txNombre.Text = txPrecio.Text = txCantidad.Text = "";
 
                     txCodigo.FindForm();
+                }
+                else
+                {
+                    MessageBox.Show("Favor ingrese todos los campos");
                 }
             }
             catch
@@ -77,5 +81,22 @@ namespace TiernoTiranosaurioI
                 throw;
             }
         }
+
+        private void btBuscar_Click(object sender, EventArgs e)
+        {
+            PorCodigo objCodigo = new PorCodigo();
+            objCodigo.Show();
+            
+
+        }
+
+        public void Producto(string codigo, string nombre, string precio, string cantidad)
+        {
+            txCodigo.Text = codigo;
+            txNombre.Text = nombre;
+            txPrecio.Text = precio;
+            txCantidad.Text = cantidad;
+        }
+
     }
 }
