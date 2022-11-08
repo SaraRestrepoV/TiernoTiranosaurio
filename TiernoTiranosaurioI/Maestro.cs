@@ -47,6 +47,9 @@ namespace TiernoTiranosaurioI
             Operaciones objOperaciones = new Operaciones();
             objOperaciones.MdiParent = this;
             objOperaciones.Show();
+
+            pbDino.Visible = false;
+            panelVerde.Visible = false;
         }
 
         private void porCódigoToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -35,5 +35,17 @@ namespace TiernoTiranosaurioI
             Agregar objAgregar = new Agregar();
             objAgregar.Show();
         }
+
+        private void btEliminar_Click(object sender, EventArgs e)
+        {
+            Eliminar objEliminar = new Eliminar();
+            objEliminar.Show();
+        }
+
+        private void btEditar_Click(object sender, EventArgs e)
+        {
+            Actualizar objActualizar = new Actualizar();
+            objActualizar.Show();
+        }
     }
 }

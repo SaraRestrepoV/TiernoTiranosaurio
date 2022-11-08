@@ -36,12 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btSalir = new System.Windows.Forms.Button();
-            this.btEliminar = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btNuevo = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tIERNOTIRANOSAURIODataSet = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet();
             this.mASCOTASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mASCOTASTableAdapter = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSetTableAdapters.MASCOTASTableAdapter();
@@ -50,13 +44,19 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btSalir = new System.Windows.Forms.Button();
+            this.btEliminar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btNuevo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -109,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(534, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 35);
@@ -120,63 +120,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Quicksand", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(628, 198);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "07/11/2022";
-            // 
-            // btSalir
-            // 
-            this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
-            this.btSalir.Location = new System.Drawing.Point(652, 584);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(116, 33);
-            this.btSalir.TabIndex = 8;
-            this.btSalir.UseVisualStyleBackColor = true;
-            // 
-            // btEliminar
-            // 
-            this.btEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btEliminar.Image")));
-            this.btEliminar.Location = new System.Drawing.Point(351, 564);
-            this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(125, 53);
-            this.btEliminar.TabIndex = 7;
-            this.btEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btEditar
-            // 
-            this.btEditar.Image = ((System.Drawing.Image)(resources.GetObject("btEditar.Image")));
-            this.btEditar.Location = new System.Drawing.Point(215, 564);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(130, 53);
-            this.btEditar.TabIndex = 6;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btNuevo
-            // 
-            this.btNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btNuevo.Image")));
-            this.btNuevo.Location = new System.Drawing.Point(65, 564);
-            this.btNuevo.Name = "btNuevo";
-            this.btNuevo.Size = new System.Drawing.Size(144, 53);
-            this.btNuevo.TabIndex = 5;
-            this.btNuevo.UseVisualStyleBackColor = true;
-            this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // mASCOTASBindingSource
-            // 
-            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
             // 
             // tIERNOTIRANOSAURIODataSet
             // 
@@ -222,6 +171,59 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "ESPECIE";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
+            // btSalir
+            // 
+            this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
+            this.btSalir.Location = new System.Drawing.Point(652, 584);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(116, 33);
+            this.btSalir.TabIndex = 8;
+            this.btSalir.UseVisualStyleBackColor = true;
+            // 
+            // btEliminar
+            // 
+            this.btEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btEliminar.Image")));
+            this.btEliminar.Location = new System.Drawing.Point(351, 564);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(125, 53);
+            this.btEliminar.TabIndex = 7;
+            this.btEliminar.UseVisualStyleBackColor = true;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
+            // 
+            // btEditar
+            // 
+            this.btEditar.Image = ((System.Drawing.Image)(resources.GetObject("btEditar.Image")));
+            this.btEditar.Location = new System.Drawing.Point(215, 564);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(130, 53);
+            this.btEditar.TabIndex = 6;
+            this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
+            // 
+            // btNuevo
+            // 
+            this.btNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btNuevo.Image")));
+            this.btNuevo.Location = new System.Drawing.Point(65, 564);
+            this.btNuevo.Name = "btNuevo";
+            this.btNuevo.Size = new System.Drawing.Size(144, 53);
+            this.btNuevo.TabIndex = 5;
+            this.btNuevo.UseVisualStyleBackColor = true;
+            this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // mASCOTASBindingSource
+            // 
+            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
+            // 
             // Operaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,10 +246,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

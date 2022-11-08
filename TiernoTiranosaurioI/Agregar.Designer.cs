@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,14 +41,15 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.btFoto = new System.Windows.Forms.Button();
-            this.btGuardar = new System.Windows.Forms.Button();
-            this.btCancelar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btCancelar = new System.Windows.Forms.Button();
+            this.btGuardar = new System.Windows.Forms.Button();
+            this.btFoto = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -60,16 +60,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(252, 147);
             this.panel2.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -134,36 +124,64 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(151, 207);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
+            this.textBox1.Size = new System.Drawing.Size(183, 20);
             this.textBox1.TabIndex = 9;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(151, 253);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 20);
+            this.textBox2.Size = new System.Drawing.Size(183, 20);
             this.textBox2.TabIndex = 10;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(151, 308);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 20);
+            this.textBox3.Size = new System.Drawing.Size(183, 20);
             this.textBox3.TabIndex = 11;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(151, 357);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 20);
+            this.textBox4.Size = new System.Drawing.Size(183, 20);
             this.textBox4.TabIndex = 12;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(151, 409);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 20);
+            this.textBox5.Size = new System.Drawing.Size(183, 20);
             this.textBox5.TabIndex = 13;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(398, 204);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(323, 182);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btCancelar
+            // 
+            this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
+            this.btCancelar.Location = new System.Drawing.Point(610, 481);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(144, 43);
+            this.btCancelar.TabIndex = 16;
+            this.btCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btGuardar
+            // 
+            this.btGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btGuardar.Image")));
+            this.btGuardar.Location = new System.Drawing.Point(60, 481);
+            this.btGuardar.Name = "btGuardar";
+            this.btGuardar.Size = new System.Drawing.Size(143, 43);
+            this.btGuardar.TabIndex = 15;
+            this.btGuardar.UseVisualStyleBackColor = true;
+            this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
             // 
             // btFoto
             // 
@@ -175,32 +193,15 @@
             this.btFoto.UseVisualStyleBackColor = true;
             this.btFoto.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btGuardar
+            // pictureBox1
             // 
-            this.btGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btGuardar.Image")));
-            this.btGuardar.Location = new System.Drawing.Point(60, 481);
-            this.btGuardar.Name = "btGuardar";
-            this.btGuardar.Size = new System.Drawing.Size(143, 43);
-            this.btGuardar.TabIndex = 15;
-            this.btGuardar.UseVisualStyleBackColor = true;
-            // 
-            // btCancelar
-            // 
-            this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
-            this.btCancelar.Location = new System.Drawing.Point(610, 481);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(144, 43);
-            this.btCancelar.TabIndex = 16;
-            this.btCancelar.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(398, 204);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(323, 182);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Agregar
             // 
@@ -227,9 +228,9 @@
             this.Name = "Agregar";
             this.Text = "Agregar";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
