@@ -22,13 +22,6 @@ namespace TiernoTiranosaurioI
             InitializeComponent();
         }
 
-        private void PorCodigo_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet1.MASCOTAS);
-
-        }
-
         private void btBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -77,6 +70,13 @@ namespace TiernoTiranosaurioI
         private void btSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PorCodigo_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
+
         }
     }
 }
