@@ -1,27 +1,24 @@
-﻿ using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace TiernoTiranosaurioI
 {
     public partial class Facturacion : Form
     {
+        string[,] ListaVenta = new string[50, 6];
+        int Fila = 0;
+        float cantidadInventario = 0;
+
+
+
         public Facturacion()
         {
             InitializeComponent();
 
-            DateTime thisDay = DateTime.Today;           
+            DateTime thisDay = DateTime.Today;
             lbFecha.Text = thisDay.ToString("d");
+
         }
-        string[,] ListaVenta = new string[50,6];
-        int Fila = 0;
-        
 
         private void btCargar_Click(object sender, EventArgs e)
         {
@@ -54,7 +51,8 @@ namespace TiernoTiranosaurioI
             }
             txTotalPagar.Text = Recorrer(4);
             txTotalIVA.Text = Recorrer(5);
-           
+            txCodigo.Focus();
+
         }
 
         public string Recorrer(int tipo)
@@ -62,7 +60,7 @@ namespace TiernoTiranosaurioI
             float total = 0;
             int conteo = dgvLista.RowCount;
 
-            for (int i = 0; i < conteo-1; i++)
+            for (int i = 0; i < conteo - 1; i++)
             {
                 total += float.Parse(dgvLista.Rows[i].Cells[tipo].Value.ToString());
             }
@@ -84,18 +82,24 @@ namespace TiernoTiranosaurioI
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
-            PorCodigo objCodigo = new PorCodigo();
-            objCodigo.Show();
             
-
         }
 
         public void Producto(string codigo, string nombre, string precio, string cantidad)
         {
-            txCodigo.Text = codigo;
-            txNombre.Text = nombre;
-            txPrecio.Text = precio;
-            txCantidad.Text = cantidad;
+            try
+            {
+                txCodigo.Text = codigo;
+                txNombre.Text = nombre;
+                txPrecio.Text = precio;
+
+                cantidadInventario = float.Parse(cantidad);
+            }
+            catch
+            {
+
+            }
+
         }
 
     }

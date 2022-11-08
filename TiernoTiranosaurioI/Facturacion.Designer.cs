@@ -273,7 +273,6 @@
             this.txEfectivo.Location = new System.Drawing.Point(610, 308);
             this.txEfectivo.Multiline = true;
             this.txEfectivo.Name = "txEfectivo";
-            this.txEfectivo.ReadOnly = true;
             this.txEfectivo.Size = new System.Drawing.Size(148, 22);
             this.txEfectivo.TabIndex = 17;
             this.txEfectivo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
