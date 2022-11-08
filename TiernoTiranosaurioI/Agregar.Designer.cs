@@ -42,9 +42,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btFoto = new System.Windows.Forms.Button();
+            this.btGuardar = new System.Windows.Forms.Button();
+            this.btCancelar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -165,32 +165,33 @@
             this.textBox5.Size = new System.Drawing.Size(152, 20);
             this.textBox5.TabIndex = 13;
             // 
-            // button1
+            // btFoto
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(486, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 42);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btFoto.Image = ((System.Drawing.Image)(resources.GetObject("btFoto.Image")));
+            this.btFoto.Location = new System.Drawing.Point(486, 404);
+            this.btFoto.Name = "btFoto";
+            this.btFoto.Size = new System.Drawing.Size(145, 42);
+            this.btFoto.TabIndex = 14;
+            this.btFoto.UseVisualStyleBackColor = true;
+            this.btFoto.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btGuardar
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(60, 481);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 43);
-            this.button2.TabIndex = 15;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btGuardar.Image")));
+            this.btGuardar.Location = new System.Drawing.Point(60, 481);
+            this.btGuardar.Name = "btGuardar";
+            this.btGuardar.Size = new System.Drawing.Size(143, 43);
+            this.btGuardar.TabIndex = 15;
+            this.btGuardar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btCancelar
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(610, 481);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 43);
-            this.button3.TabIndex = 16;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
+            this.btCancelar.Location = new System.Drawing.Point(610, 481);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(144, 43);
+            this.btCancelar.TabIndex = 16;
+            this.btCancelar.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -208,9 +209,9 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(784, 545);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btCancelar);
+            this.Controls.Add(this.btGuardar);
+            this.Controls.Add(this.btFoto);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -249,9 +250,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btFoto;
+        private System.Windows.Forms.Button btGuardar;
+        private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

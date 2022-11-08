@@ -29,3 +29,20 @@ C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\Tierno
 C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.CoreCompileInputs.cache
 C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.exe
 C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.pdb
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\bin\Debug\TiernoTiranosaurioI.exe.config
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\bin\Debug\TiernoTiranosaurioI.exe
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\bin\Debug\TiernoTiranosaurioI.pdb
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.AssemblyReference.cache
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.SuggestedBindingRedirects.cache
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Agregar.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Facturacion.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Login.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Menú.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Operaciones.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.PorCodigo.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.PorNombre.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Properties.Resources.resources
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.GenerateResource.cache
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.CoreCompileInputs.cache
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.exe
+C:\Users\srest\OneDrive\Documentos\TiernoTiranosaurio\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.pdb

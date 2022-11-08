@@ -44,7 +44,9 @@ namespace TiernoTiranosaurioI
 
         private void tsOperaciones_Click(object sender, EventArgs e)
         {
-
+            Operaciones objOperaciones = new Operaciones();
+            objOperaciones.MdiParent = this;
+            objOperaciones.Show();
         }
 
         private void porCódigoToolStripMenuItem1_Click(object sender, EventArgs e)
