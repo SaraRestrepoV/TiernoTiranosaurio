@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Drawing.Imaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,6 +26,8 @@ namespace TiernoTiranosaurioI
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
+            SqlCommand cmd = new SqlCommand();
+            
             try
             {
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
@@ -34,10 +38,17 @@ namespace TiernoTiranosaurioI
                     objTabla = DB.consulta(ConsultaSQL, objConector);                  
                     if (objTabla.Read())
                     {
+                  /*      Byte[] byteBLOBData = new Byte[0];
+                        byteBLOBData = (Byte[])(objTabla[1]);
+                        MemoryStream stmBLOBData = new MemoryStream(byteBLOBData);
+                        pbImagen.Image = Image.FromStream(stmBLOBData);*/
                         txNombre.Text = objTabla[2].ToString();
                         txPrecio.Text = objTabla[3].ToString();
                         txCantidad.Text = objTabla[4].ToString();
                         txEspecie.Text = objTabla[7].ToString();
+                      //  System.IO.Stream ms = new System.IO.MemoryStream(img);
+                     //   pbImagen.Image = Image.FromStream(ms);
+                    //    pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
                     }
                     else
                     {

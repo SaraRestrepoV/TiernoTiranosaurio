@@ -22,7 +22,6 @@ namespace TiernoTiranosaurioI
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
-            btBuscar.Enabled = false;
 
             try
             {
@@ -82,7 +81,6 @@ namespace TiernoTiranosaurioI
                 MessageBox.Show("No se pudo eliminar");
             }
 
-            btBuscar.Enabled = true;
             btEliminar.Enabled = false;
         }
 

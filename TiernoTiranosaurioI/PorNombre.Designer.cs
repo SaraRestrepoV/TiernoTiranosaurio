@@ -86,6 +86,7 @@
             this.txCodigo.Location = new System.Drawing.Point(568, 325);
             this.txCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txCodigo.Name = "txCodigo";
+            this.txCodigo.ReadOnly = true;
             this.txCodigo.Size = new System.Drawing.Size(171, 20);
             this.txCodigo.TabIndex = 67;
             // 
@@ -146,6 +147,7 @@
             this.txCantidad.Location = new System.Drawing.Point(568, 401);
             this.txCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txCantidad.Name = "txCantidad";
+            this.txCantidad.ReadOnly = true;
             this.txCantidad.Size = new System.Drawing.Size(171, 20);
             this.txCantidad.TabIndex = 60;
             // 
@@ -166,6 +168,7 @@
             this.txPrecio.Location = new System.Drawing.Point(568, 363);
             this.txPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txPrecio.Name = "txPrecio";
+            this.txPrecio.ReadOnly = true;
             this.txPrecio.Size = new System.Drawing.Size(171, 20);
             this.txPrecio.TabIndex = 58;
             // 

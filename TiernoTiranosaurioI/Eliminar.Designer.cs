@@ -43,7 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.btBuscar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +54,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(47, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(174, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -66,7 +65,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Azure;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(271, -1);
+            this.panel2.Location = new System.Drawing.Point(197, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(266, 147);
             this.panel2.TabIndex = 3;
@@ -84,6 +83,7 @@
             // 
             this.txEspecie.Location = new System.Drawing.Point(145, 417);
             this.txEspecie.Name = "txEspecie";
+            this.txEspecie.ReadOnly = true;
             this.txEspecie.Size = new System.Drawing.Size(183, 20);
             this.txEspecie.TabIndex = 23;
             // 
@@ -91,6 +91,7 @@
             // 
             this.txCantidad.Location = new System.Drawing.Point(145, 365);
             this.txCantidad.Name = "txCantidad";
+            this.txCantidad.ReadOnly = true;
             this.txCantidad.Size = new System.Drawing.Size(183, 20);
             this.txCantidad.TabIndex = 22;
             // 
@@ -98,6 +99,7 @@
             // 
             this.txPrecio.Location = new System.Drawing.Point(145, 316);
             this.txPrecio.Name = "txPrecio";
+            this.txPrecio.ReadOnly = true;
             this.txPrecio.Size = new System.Drawing.Size(183, 20);
             this.txPrecio.TabIndex = 21;
             // 
@@ -105,6 +107,7 @@
             // 
             this.txNombre.Location = new System.Drawing.Point(145, 261);
             this.txNombre.Name = "txNombre";
+            this.txNombre.ReadOnly = true;
             this.txNombre.Size = new System.Drawing.Size(183, 20);
             this.txNombre.TabIndex = 20;
             // 
@@ -112,6 +115,7 @@
             // 
             this.txCodigo.Location = new System.Drawing.Point(145, 215);
             this.txCodigo.Name = "txCodigo";
+            this.txCodigo.ReadOnly = true;
             this.txCodigo.Size = new System.Drawing.Size(183, 20);
             this.txCodigo.TabIndex = 19;
             // 
@@ -168,26 +172,16 @@
             // btEliminar
             // 
             this.btEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btEliminar.Image")));
-            this.btEliminar.Location = new System.Drawing.Point(361, 459);
+            this.btEliminar.Location = new System.Drawing.Point(54, 476);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(114, 43);
             this.btEliminar.TabIndex = 24;
             this.btEliminar.UseVisualStyleBackColor = true;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
-            // btBuscar
-            // 
-            this.btBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btBuscar.Image")));
-            this.btBuscar.Location = new System.Drawing.Point(361, 215);
-            this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(114, 43);
-            this.btBuscar.TabIndex = 25;
-            this.btBuscar.UseVisualStyleBackColor = true;
-            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
-            // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(502, 215);
+            this.pictureBox2.Location = new System.Drawing.Point(378, 215);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(264, 186);
             this.pictureBox2.TabIndex = 26;
@@ -196,7 +190,7 @@
             // btSalir
             // 
             this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
-            this.btSalir.Location = new System.Drawing.Point(654, 459);
+            this.btSalir.Location = new System.Drawing.Point(240, 476);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(112, 43);
             this.btSalir.TabIndex = 27;
@@ -208,10 +202,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(800, 549);
+            this.ClientSize = new System.Drawing.Size(665, 549);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.txEspecie);
             this.Controls.Add(this.txCantidad);
@@ -246,7 +239,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btEliminar;
-        private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btSalir;
         public System.Windows.Forms.TextBox txEspecie;

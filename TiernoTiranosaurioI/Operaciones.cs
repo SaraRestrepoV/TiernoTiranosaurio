@@ -78,9 +78,7 @@ namespace TiernoTiranosaurioI
                 objAct.txPrecio.Text = precioDG;
                 objAct.txCantidad.Text = cantidadDG;
                 objAct.txEspecie.Text = especieDG;
-            }
-
-          
+            }        
           
         }
 

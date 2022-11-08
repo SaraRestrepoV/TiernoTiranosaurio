@@ -124,6 +124,7 @@
             // 
             this.txCodigo.Location = new System.Drawing.Point(126, 204);
             this.txCodigo.Name = "txCodigo";
+            this.txCodigo.ReadOnly = true;
             this.txCodigo.Size = new System.Drawing.Size(183, 20);
             this.txCodigo.TabIndex = 24;
             // 
@@ -192,7 +193,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(271, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(252, 147);
+            this.panel2.Size = new System.Drawing.Size(252, 149);
             this.panel2.TabIndex = 3;
             // 
             // pictureBox1
