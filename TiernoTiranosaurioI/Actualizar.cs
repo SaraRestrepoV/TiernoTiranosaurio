@@ -41,7 +41,7 @@ namespace TiernoTiranosaurioI
             int precio = Int32.Parse(txPrecio.Text);
             int cantidad = Int32.Parse(txCantidad.Text);
             objConector = DB.conectar("TIERNOTIRANOSAURIO");
-            string consultaSql = "UPDATE MASCOTAS set imagen=" + ms.GetBuffer() + " ,nombre= '" + nombre + "' , precio =" + precio + ", cantidad= " + cantidad + ", especie=" + especie + "where codigo= " + cod;
+            string consultaSql = "UPDATE MASCOTAS set imagen= '" + ms.GetBuffer() + "' ,nombre= '" + nombre + "' , precio =" + precio + ", cantidad= " + cantidad + ", especie=" + especie + "where codigo= " + cod;
 
             int n = DB.operar(consultaSql, objConector);
             if (n > 0)
@@ -102,6 +102,11 @@ namespace TiernoTiranosaurioI
             {
                 MessageBox.Show("Error en la conexión " + ex.Message);
             }
+        }
+
+        private void Actualizar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

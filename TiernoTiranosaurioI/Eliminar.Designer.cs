@@ -240,11 +240,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txEspecie;
-        private System.Windows.Forms.TextBox txCantidad;
-        private System.Windows.Forms.TextBox txPrecio;
-        private System.Windows.Forms.TextBox txNombre;
-        private System.Windows.Forms.TextBox txCodigo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -254,5 +249,10 @@
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btSalir;
+        public System.Windows.Forms.TextBox txEspecie;
+        public System.Windows.Forms.TextBox txCantidad;
+        public System.Windows.Forms.TextBox txPrecio;
+        public System.Windows.Forms.TextBox txNombre;
+        public System.Windows.Forms.TextBox txCodigo;
     }
 }

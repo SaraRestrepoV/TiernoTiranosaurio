@@ -238,6 +238,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Actualizar";
             this.Text = "Actualizar";
+            this.Load += new System.EventHandler(this.Actualizar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcImagen)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -253,11 +254,6 @@
         private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.Button btFoto;
-        private System.Windows.Forms.TextBox txEspecie;
-        private System.Windows.Forms.TextBox txCantidad;
-        private System.Windows.Forms.TextBox txPrecio;
-        private System.Windows.Forms.TextBox txNombre;
-        private System.Windows.Forms.TextBox txCodigo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -267,5 +263,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btBuscar;
+        public System.Windows.Forms.TextBox txEspecie;
+        public System.Windows.Forms.TextBox txCantidad;
+        public System.Windows.Forms.TextBox txPrecio;
+        public System.Windows.Forms.TextBox txNombre;
+        public System.Windows.Forms.TextBox txCodigo;
     }
 }

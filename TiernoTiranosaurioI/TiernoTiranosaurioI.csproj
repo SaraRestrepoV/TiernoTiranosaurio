@@ -58,6 +58,7 @@
     <Compile Include="Agregar.Designer.cs">
       <DependentUpon>Agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsImagen.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="Eliminar.cs">
       <SubType>Form</SubType>
