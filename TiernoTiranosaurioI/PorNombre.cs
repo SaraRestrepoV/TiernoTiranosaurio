@@ -39,13 +39,6 @@ namespace TiernoTiranosaurioI
 
         private void PorNombre_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.DETALLE_FACTURA' Puede moverla o quitarla según sea necesario.
-            this.dETALLE_FACTURATableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet1.DETALLE_FACTURA);
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet1.MASCOTAS);
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.ESPECIE' Puede moverla o quitarla según sea necesario.
-            this.eSPECIETableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet1.ESPECIE);
-
         }
 
         private void btBuscar_Click(object sender, EventArgs e)

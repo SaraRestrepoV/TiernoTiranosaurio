@@ -116,21 +116,22 @@
             // 
             this.tsCotizacion.Image = ((System.Drawing.Image)(resources.GetObject("tsCotizacion.Image")));
             this.tsCotizacion.Name = "tsCotizacion";
-            this.tsCotizacion.Size = new System.Drawing.Size(153, 22);
+            this.tsCotizacion.Size = new System.Drawing.Size(180, 22);
             this.tsCotizacion.Text = "Cotización";
             // 
             // tsFactura
             // 
             this.tsFactura.Image = ((System.Drawing.Image)(resources.GetObject("tsFactura.Image")));
             this.tsFactura.Name = "tsFactura";
-            this.tsFactura.Size = new System.Drawing.Size(153, 22);
+            this.tsFactura.Size = new System.Drawing.Size(180, 22);
             this.tsFactura.Text = "Factura";
+            this.tsFactura.Click += new System.EventHandler(this.tsFactura_Click);
             // 
             // tsInforme
             // 
             this.tsInforme.Image = ((System.Drawing.Image)(resources.GetObject("tsInforme.Image")));
             this.tsInforme.Name = "tsInforme";
-            this.tsInforme.Size = new System.Drawing.Size(153, 22);
+            this.tsInforme.Size = new System.Drawing.Size(180, 22);
             this.tsInforme.Text = "Informe ventas";
             // 
             // consultarToolStripMenuItem

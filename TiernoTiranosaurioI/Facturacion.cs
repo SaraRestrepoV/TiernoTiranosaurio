@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +15,14 @@ namespace TiernoTiranosaurioI
         public Facturacion()
         {
             InitializeComponent();
+
+            DateTime thisDay = DateTime.Today;           
+            lbFecha.Text = thisDay.ToString("d");
         }
         string[,] ListaVenta = new string[50,6];
         int Fila = 0;
-       
+        
+
         private void btCargar_Click(object sender, EventArgs e)
         {
             try
@@ -44,11 +48,9 @@ namespace TiernoTiranosaurioI
             {
 
             }
-            string TotalPagar = Recorrer(4);
-            string TotalIVA = Recorrer(5);
-
-            txTotalPagar.Text = TotalPagar;
-            txTotalIVA.Text = TotalIVA;
+            txTotalPagar.Text = Recorrer(4);
+            txTotalIVA.Text = Recorrer(5);
+           
         }
 
         public string Recorrer(int tipo)
@@ -61,6 +63,19 @@ namespace TiernoTiranosaurioI
                 total += float.Parse(dgvLista.Rows[i].Cells[tipo].Value.ToString());
             }
             return total.ToString();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                txDevolucion.Text = (float.Parse(txEfectivo.Text) - (float.Parse(txTotalPagar.Text) + float.Parse(txTotalIVA.Text))).ToString();
+            }
+            catch (Exception)
+            {
+                txDevolucion.Text = "0.0";
+                throw;
+            }
         }
     }
 }

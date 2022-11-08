@@ -42,24 +42,24 @@
             this.txCantidad = new System.Windows.Forms.TextBox();
             this.btCargar = new System.Windows.Forms.Button();
             this.dgvLista = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txTotalPagar = new System.Windows.Forms.TextBox();
-            this.txTotalIVA = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.IdMascota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IVA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbFecha = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txEfectivo = new System.Windows.Forms.TextBox();
+            this.txTotalPagar = new System.Windows.Forms.TextBox();
+            this.txTotalIVA = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txDevolucion = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -187,123 +187,6 @@
             this.dgvLista.Size = new System.Drawing.Size(532, 150);
             this.dgvLista.TabIndex = 11;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(517, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Fecha:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(594, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "30/12/2022";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(517, 167);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 20);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Total a pagar:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(532, 209);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 20);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Total IVA:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(640, 285);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 20);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Efectivo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(610, 308);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 38);
-            this.textBox1.TabIndex = 17;
-            // 
-            // txTotalPagar
-            // 
-            this.txTotalPagar.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txTotalPagar.ForeColor = System.Drawing.Color.Aquamarine;
-            this.txTotalPagar.Location = new System.Drawing.Point(665, 167);
-            this.txTotalPagar.Name = "txTotalPagar";
-            this.txTotalPagar.ReadOnly = true;
-            this.txTotalPagar.Size = new System.Drawing.Size(130, 20);
-            this.txTotalPagar.TabIndex = 18;
-            // 
-            // txTotalIVA
-            // 
-            this.txTotalIVA.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txTotalIVA.ForeColor = System.Drawing.Color.Aquamarine;
-            this.txTotalIVA.Location = new System.Drawing.Point(665, 209);
-            this.txTotalIVA.Name = "txTotalIVA";
-            this.txTotalIVA.ReadOnly = true;
-            this.txTotalIVA.Size = new System.Drawing.Size(130, 20);
-            this.txTotalIVA.TabIndex = 19;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(610, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 28);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Vender";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__3__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(713, 69);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox4.ForeColor = System.Drawing.Color.Aquamarine;
-            this.textBox4.Location = new System.Drawing.Point(610, 385);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(130, 20);
-            this.textBox4.TabIndex = 24;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(606, 362);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 20);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Devolución:";
-            // 
             // IdMascota
             // 
             this.IdMascota.HeaderText = "IdMascota";
@@ -334,22 +217,143 @@
             this.IVA.HeaderText = "IVA 19%";
             this.IVA.Name = "IVA";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(505, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Fecha:";
+            // 
+            // lbFecha
+            // 
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Location = new System.Drawing.Point(606, 105);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(21, 20);
+            this.lbFecha.TabIndex = 13;
+            this.lbFecha.Text = "...";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(505, 167);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 20);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Total a pagar:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(505, 207);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 20);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Total IVA:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(606, 285);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 20);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Efectivo";
+            // 
+            // txEfectivo
+            // 
+            this.txEfectivo.Location = new System.Drawing.Point(610, 308);
+            this.txEfectivo.Multiline = true;
+            this.txEfectivo.Name = "txEfectivo";
+            this.txEfectivo.ReadOnly = true;
+            this.txEfectivo.Size = new System.Drawing.Size(148, 22);
+            this.txEfectivo.TabIndex = 17;
+            this.txEfectivo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txTotalPagar
+            // 
+            this.txTotalPagar.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txTotalPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txTotalPagar.ForeColor = System.Drawing.Color.Crimson;
+            this.txTotalPagar.Location = new System.Drawing.Point(610, 167);
+            this.txTotalPagar.Name = "txTotalPagar";
+            this.txTotalPagar.ReadOnly = true;
+            this.txTotalPagar.Size = new System.Drawing.Size(130, 20);
+            this.txTotalPagar.TabIndex = 18;
+            // 
+            // txTotalIVA
+            // 
+            this.txTotalIVA.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txTotalIVA.ForeColor = System.Drawing.Color.Crimson;
+            this.txTotalIVA.Location = new System.Drawing.Point(610, 207);
+            this.txTotalIVA.Name = "txTotalIVA";
+            this.txTotalIVA.ReadOnly = true;
+            this.txTotalIVA.Size = new System.Drawing.Size(130, 20);
+            this.txTotalIVA.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(610, 430);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 28);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Vender";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__3__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(713, 69);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(82, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txDevolucion
+            // 
+            this.txDevolucion.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txDevolucion.ForeColor = System.Drawing.Color.Lime;
+            this.txDevolucion.Location = new System.Drawing.Point(610, 385);
+            this.txDevolucion.Name = "txDevolucion";
+            this.txDevolucion.ReadOnly = true;
+            this.txDevolucion.Size = new System.Drawing.Size(130, 20);
+            this.txDevolucion.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(606, 362);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(91, 20);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Devolución:";
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 482);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txDevolucion);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txTotalIVA);
             this.Controls.Add(this.txTotalPagar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txEfectivo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbFecha);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvLista);
             this.Controls.Add(this.btCargar);
@@ -389,17 +393,17 @@
         private System.Windows.Forms.Button btCargar;
         private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txEfectivo;
         private System.Windows.Forms.TextBox txTotalPagar;
         private System.Windows.Forms.TextBox txTotalIVA;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txDevolucion;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdMascota;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
