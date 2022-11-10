@@ -1,4 +1,6 @@
-﻿namespace TiernoTiranosaurioI
+﻿using System.Threading;
+
+namespace TiernoTiranosaurioI
 {
     partial class Facturacion
     {
@@ -28,14 +30,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturacion));
-            this.btBuscar = new System.Windows.Forms.Button();
+            this.btBuscarCodigo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.txCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txPrecio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,20 +61,32 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txDevolucion = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.cbCodigo = new System.Windows.Forms.ComboBox();
+            this.tIERNOTIRANOSAURIODataSet = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet();
+            this.tIERNOTIRANOSAURIODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mASCOTASTableAdapter = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSetTableAdapters.MASCOTASTableAdapter();
+            this.mASCOTASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btBuscarNombre = new System.Windows.Forms.Button();
+            this.cbNombre = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btBuscar
+            // btBuscarCodigo
             // 
-            this.btBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btBuscar.Image")));
-            this.btBuscar.Location = new System.Drawing.Point(347, 97);
-            this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(105, 28);
-            this.btBuscar.TabIndex = 0;
-            this.btBuscar.UseVisualStyleBackColor = true;
-            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
+            this.btBuscarCodigo.Image = ((System.Drawing.Image)(resources.GetObject("btBuscarCodigo.Image")));
+            this.btBuscarCodigo.Location = new System.Drawing.Point(336, 100);
+            this.btBuscarCodigo.Name = "btBuscarCodigo";
+            this.btBuscarCodigo.Size = new System.Drawing.Size(105, 28);
+            this.btBuscarCodigo.TabIndex = 0;
+            this.btBuscarCodigo.UseVisualStyleBackColor = true;
+            this.btBuscarCodigo.Click += new System.EventHandler(this.btBuscarCodigo_Click);
             // 
             // panel1
             // 
@@ -94,13 +107,6 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Módulo de facturación";
             // 
-            // txCodigo
-            // 
-            this.txCodigo.Location = new System.Drawing.Point(171, 105);
-            this.txCodigo.Name = "txCodigo";
-            this.txCodigo.Size = new System.Drawing.Size(130, 20);
-            this.txCodigo.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -120,13 +126,6 @@
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Nombre:";
-            // 
-            // txNombre
-            // 
-            this.txNombre.Location = new System.Drawing.Point(171, 152);
-            this.txNombre.Name = "txNombre";
-            this.txNombre.Size = new System.Drawing.Size(130, 20);
-            this.txNombre.TabIndex = 4;
             // 
             // label3
             // 
@@ -338,11 +337,70 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Devolución:";
             // 
+            // cbCodigo
+            // 
+            this.cbCodigo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbCodigo.FormattingEnabled = true;
+            this.cbCodigo.Items.AddRange(new object[] {
+            "Seleccione un elemento"});
+            this.cbCodigo.Location = new System.Drawing.Point(171, 105);
+            this.cbCodigo.Name = "cbCodigo";
+            this.cbCodigo.Size = new System.Drawing.Size(141, 21);
+            this.cbCodigo.TabIndex = 25;
+            // 
+            // tIERNOTIRANOSAURIODataSet
+            // 
+            this.tIERNOTIRANOSAURIODataSet.DataSetName = "TIERNOTIRANOSAURIODataSet";
+            this.tIERNOTIRANOSAURIODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tIERNOTIRANOSAURIODataSetBindingSource
+            // 
+            this.tIERNOTIRANOSAURIODataSetBindingSource.DataSource = this.tIERNOTIRANOSAURIODataSet;
+            this.tIERNOTIRANOSAURIODataSetBindingSource.Position = 0;
+            // 
+            // mASCOTASBindingSource
+            // 
+            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource.DataSource = this.tIERNOTIRANOSAURIODataSetBindingSource;
+            // 
+            // mASCOTASTableAdapter
+            // 
+            this.mASCOTASTableAdapter.ClearBeforeFill = true;
+            // 
+            // mASCOTASBindingSource1
+            // 
+            this.mASCOTASBindingSource1.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource1.DataSource = this.tIERNOTIRANOSAURIODataSetBindingSource;
+            // 
+            // btBuscarNombre
+            // 
+            this.btBuscarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btBuscarNombre.Image")));
+            this.btBuscarNombre.Location = new System.Drawing.Point(336, 147);
+            this.btBuscarNombre.Name = "btBuscarNombre";
+            this.btBuscarNombre.Size = new System.Drawing.Size(105, 28);
+            this.btBuscarNombre.TabIndex = 26;
+            this.btBuscarNombre.UseVisualStyleBackColor = true;
+            this.btBuscarNombre.Click += new System.EventHandler(this.btBuscarNombre_Click);
+            // 
+            // cbNombre
+            // 
+            this.cbNombre.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbNombre.FormattingEnabled = true;
+            this.cbNombre.Items.AddRange(new object[] {
+            "Seleccione un elemento"});
+            this.cbNombre.Location = new System.Drawing.Point(171, 148);
+            this.cbNombre.Name = "cbNombre";
+            this.cbNombre.Size = new System.Drawing.Size(141, 21);
+            this.cbNombre.TabIndex = 27;
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 482);
+            this.Controls.Add(this.cbNombre);
+            this.Controls.Add(this.btBuscarNombre);
+            this.Controls.Add(this.cbCodigo);
             this.Controls.Add(this.txDevolucion);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
@@ -362,17 +420,20 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txNombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txCodigo);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btBuscar);
+            this.Controls.Add(this.btBuscarCodigo);
             this.Name = "Facturacion";
             this.Text = "Facturacion";
+            this.Load += new System.EventHandler(this.Facturacion_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,12 +441,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btBuscar;
+        private System.Windows.Forms.Button btBuscarCodigo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txNombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txPrecio;
         private System.Windows.Forms.Label label4;
@@ -411,5 +470,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn IVA;
+        private System.Windows.Forms.ComboBox cbCodigo;
+        private System.Windows.Forms.BindingSource tIERNOTIRANOSAURIODataSetBindingSource;
+        private TIERNOTIRANOSAURIODataSet tIERNOTIRANOSAURIODataSet;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource;
+        private TIERNOTIRANOSAURIODataSetTableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource1;
+        private System.Windows.Forms.Button btBuscarNombre;
+        private System.Windows.Forms.ComboBox cbNombre;
     }
 }
