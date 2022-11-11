@@ -73,7 +73,7 @@
             // 
             this.tsSalir.Image = ((System.Drawing.Image)(resources.GetObject("tsSalir.Image")));
             this.tsSalir.Name = "tsSalir";
-            this.tsSalir.Size = new System.Drawing.Size(180, 22);
+            this.tsSalir.Size = new System.Drawing.Size(96, 22);
             this.tsSalir.Text = "Salir";
             this.tsSalir.Click += new System.EventHandler(this.tsSalir_Click);
             // 
@@ -116,14 +116,15 @@
             // 
             this.tsCotizacion.Image = ((System.Drawing.Image)(resources.GetObject("tsCotizacion.Image")));
             this.tsCotizacion.Name = "tsCotizacion";
-            this.tsCotizacion.Size = new System.Drawing.Size(153, 22);
+            this.tsCotizacion.Size = new System.Drawing.Size(180, 22);
             this.tsCotizacion.Text = "Cotización";
+            this.tsCotizacion.Click += new System.EventHandler(this.tsCotizacion_Click);
             // 
             // tsFactura
             // 
             this.tsFactura.Image = ((System.Drawing.Image)(resources.GetObject("tsFactura.Image")));
             this.tsFactura.Name = "tsFactura";
-            this.tsFactura.Size = new System.Drawing.Size(153, 22);
+            this.tsFactura.Size = new System.Drawing.Size(180, 22);
             this.tsFactura.Text = "Factura";
             this.tsFactura.Click += new System.EventHandler(this.tsFactura_Click);
             // 
@@ -131,7 +132,7 @@
             // 
             this.tsInforme.Image = ((System.Drawing.Image)(resources.GetObject("tsInforme.Image")));
             this.tsInforme.Name = "tsInforme";
-            this.tsInforme.Size = new System.Drawing.Size(153, 22);
+            this.tsInforme.Size = new System.Drawing.Size(180, 22);
             this.tsInforme.Text = "Informe ventas";
             // 
             // consultarToolStripMenuItem
@@ -148,7 +149,7 @@
             // 
             this.porCódigoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("porCódigoToolStripMenuItem1.Image")));
             this.porCódigoToolStripMenuItem1.Name = "porCódigoToolStripMenuItem1";
-            this.porCódigoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porCódigoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.porCódigoToolStripMenuItem1.Text = "Por código";
             this.porCódigoToolStripMenuItem1.Click += new System.EventHandler(this.porCódigoToolStripMenuItem1_Click);
             // 
@@ -156,7 +157,7 @@
             // 
             this.porNombreToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("porNombreToolStripMenuItem1.Image")));
             this.porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            this.porNombreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porNombreToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.porNombreToolStripMenuItem1.Text = "Por nombre";
             this.porNombreToolStripMenuItem1.Click += new System.EventHandler(this.porNombreToolStripMenuItem1_Click);
             // 

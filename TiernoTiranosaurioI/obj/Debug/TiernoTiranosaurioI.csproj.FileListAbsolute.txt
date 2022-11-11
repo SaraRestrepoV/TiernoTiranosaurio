@@ -29,3 +29,5 @@ C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\Tierno
 C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.CoreCompileInputs.cache
 C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.exe
 C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.pdb
+C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Cotizacion.resources
+C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.ImpresionCotizacion.resources

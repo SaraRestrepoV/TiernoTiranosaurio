@@ -1,29 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TiernoTiranosaurioI
 {
-
-    public partial class Facturacion : Form
+    public partial class Cotizacion : Form
     {
         string[,] ListaVenta = new string[50, 6];
         int Fila = 0;
         string cantidadInventario = "";
         SqlConnection objConector;
         SqlDataReader objTabla;
+        public static string imprimirCotizacion = "";
 
         bool UsuarioVerificado = false;
 
-        public Facturacion()
+        public Cotizacion()
         {
             InitializeComponent();
-
             DateTime thisDay = DateTime.Today;
             lbFecha.Text = thisDay.ToString("d");
             cbCodigo.SelectedIndex = 0;
             cbNombre.SelectedIndex = 0;
-
         }
 
         private void btCargar_Click(object sender, EventArgs e)
@@ -40,6 +45,7 @@ namespace TiernoTiranosaurioI
                     ListaVenta[Fila, 5] = (float.Parse(ListaVenta[Fila, 4]) * 0.19).ToString();
 
                     dgvLista.Rows.Add(ListaVenta[Fila, 0], ListaVenta[Fila, 1], ListaVenta[Fila, 2], ListaVenta[Fila, 3], ListaVenta[Fila, 4], ListaVenta[Fila, 5]);
+            
 
                     Fila = Fila + 1;
                     cbCodigo.Text = cbNombre.Text = txPrecio.Text = txCantidad.Text = "";
@@ -53,13 +59,14 @@ namespace TiernoTiranosaurioI
             }
             catch
             {
-
+                
             }
             txTotalPagar.Text = Recorrer(4);
             txTotalIVA.Text = Recorrer(5);
             cbCodigo.Focus();
             cbCodigo.SelectedIndex = 0;
             cbNombre.SelectedIndex = 0;
+
 
         }
 
@@ -75,23 +82,12 @@ namespace TiernoTiranosaurioI
             return total.ToString();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txTotalPagar.Text) || string.IsNullOrEmpty(txTotalIVA.Text))
-            {
-                txEfectivo.Text = "";
-                MessageBox.Show("Debes ingresar un producto antes");
-            }
-
-            _ = string.IsNullOrEmpty(txEfectivo.Text) ? txEfectivo.Text = "" : txDevolucion.Text = (float.Parse(txEfectivo.Text) - (float.Parse(txTotalPagar.Text) + float.Parse(txTotalIVA.Text))).ToString();
-
-        }
-
         private void Facturacion_Load(object sender, EventArgs e)
         {
             CriteriosBusqueda("CODIGO");
             CriteriosBusqueda("NOMBRE");
         }
+
 
         private void CriteriosBusqueda(string tipoBusqueda)
         {
@@ -195,22 +191,38 @@ namespace TiernoTiranosaurioI
                 int cedula = Int32.Parse(txCedula.Text);
                 string nombre = txNombre.Text;
                 string apellido = txApellido.Text;
-                string ConsultaSQL = "INSERT INTO CLIENTE VALUES (" + cedula + ",'" + nombre + "','" + apellido + "')"; 
-                int n = DB.operar(ConsultaSQL, objConector); 
+                string ConsultaSQL = "INSERT INTO CLIENTE VALUES (" + cedula + ",'" + nombre + "','" + apellido + "')";
+                int n = DB.operar(ConsultaSQL, objConector);
 
-                if (n > 0) MessageBox.Show("Usuario ingresado"); 
+                if (n > 0) MessageBox.Show("Usuario ingresado");
                 if (n == 0)
                 {
-                    MessageBox.Show("No se pudo ingresar el usuario"); 
-                    btInsertar.Enabled = false; 
+                    MessageBox.Show("No se pudo ingresar el usuario");
+                    btInsertar.Enabled = false;
                 }
 
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Cotizacion_Load(object sender, EventArgs e)
         {
-
+            CriteriosBusqueda("CODIGO");
+            CriteriosBusqueda("NOMBRE");
         }
+
+        private void btCotizar_Click(object sender, EventArgs e)
+        {
+            ImpresionCotizacion objImpresion = new ImpresionCotizacion();
+            
+            objImpresion.Show();
+            imprimirCotizacion = "hola";
+
+            imprimirCotizacion = imprimirCotizacion + " sarita besha puessss.....";
+
+            objImpresion.txImpresion.Text = imprimirCotizacion;
+
+            this.Close();
+        }
+
     }
 }
