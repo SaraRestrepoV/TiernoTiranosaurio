@@ -4,51 +4,39 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Drawing.Imaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TiernoTiranosaurioI
 {
-    public partial class PorCodigo : Form
+    public partial class Eliminar : Form
     {
-
         SqlConnection objConector;
         SqlDataReader objTabla;
-
-        public PorCodigo()
+        public Eliminar()
         {
             InitializeComponent();
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand();
-            
+
             try
             {
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
-                int codigo = Int32.Parse(cbCodigo.Text);
-                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;               
+                int codigo = Int32.Parse(txCodigo.Text);
+                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;
                 try
                 {
-                    objTabla = DB.consulta(ConsultaSQL, objConector);                  
+                    objTabla = DB.consulta(ConsultaSQL, objConector);
                     if (objTabla.Read())
                     {
-                  /*      Byte[] byteBLOBData = new Byte[0];
-                        byteBLOBData = (Byte[])(objTabla[1]);
-                        MemoryStream stmBLOBData = new MemoryStream(byteBLOBData);
-                        pbImagen.Image = Image.FromStream(stmBLOBData);*/
                         txNombre.Text = objTabla[2].ToString();
                         txPrecio.Text = objTabla[3].ToString();
                         txCantidad.Text = objTabla[4].ToString();
                         txEspecie.Text = objTabla[7].ToString();
-                      //  System.IO.Stream ms = new System.IO.MemoryStream(img);
-                     //   pbImagen.Image = Image.FromStream(ms);
-                    //    pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
                     }
                     else
                     {
@@ -70,24 +58,35 @@ namespace TiernoTiranosaurioI
             }
         }
 
-        private void btBorrar_Click(object sender, EventArgs e)
+        private void btEliminar_Click(object sender, EventArgs e)
         {
-            txNombre.Text = "";
-            txEspecie.Text = "";
-            txCantidad.Text = "";
-            txPrecio.Text = "";
+            try
+            {
+                objConector = DB.conectar("TIERNOTIRANOSAURIO");
+                int codi = Int32.Parse(txCodigo.Text);
+                string ConsultaSQL1 = "DELETE from mascotas  where codigo= " + codi;
+                int n = DB.operar(ConsultaSQL1, objConector);
+                if (n > 0)
+                {
+                    MessageBox.Show("Se ha eliminado la mascota: " + codi);
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo realizar la Eliminación");
+                }
+
+            }
+            catch (SqlException EXX)
+            {
+                MessageBox.Show("No se pudo eliminar");
+            }
+
+            btEliminar.Enabled = false;
         }
 
         private void btSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void PorCodigo_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
-
         }
     }
 }

@@ -42,7 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txEspecie = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
             this.btSalir = new System.Windows.Forms.Button();
             this.btBorrar = new System.Windows.Forms.Button();
             this.btBuscar = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.mASCOTASTableAdapter = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSetTableAdapters.MASCOTASTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).BeginInit();
@@ -105,6 +105,7 @@
             this.txCantidad.Location = new System.Drawing.Point(568, 420);
             this.txCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txCantidad.Name = "txCantidad";
+            this.txCantidad.ReadOnly = true;
             this.txCantidad.Size = new System.Drawing.Size(171, 20);
             this.txCantidad.TabIndex = 43;
             // 
@@ -125,6 +126,7 @@
             this.txPrecio.Location = new System.Drawing.Point(568, 382);
             this.txPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txPrecio.Name = "txPrecio";
+            this.txPrecio.ReadOnly = true;
             this.txPrecio.Size = new System.Drawing.Size(171, 20);
             this.txPrecio.TabIndex = 41;
             // 
@@ -145,6 +147,7 @@
             this.txNombre.Location = new System.Drawing.Point(568, 341);
             this.txNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txNombre.Name = "txNombre";
+            this.txNombre.ReadOnly = true;
             this.txNombre.Size = new System.Drawing.Size(171, 20);
             this.txNombre.TabIndex = 38;
             // 
@@ -165,6 +168,7 @@
             this.txEspecie.Location = new System.Drawing.Point(568, 462);
             this.txEspecie.Margin = new System.Windows.Forms.Padding(4);
             this.txEspecie.Name = "txEspecie";
+            this.txEspecie.ReadOnly = true;
             this.txEspecie.Size = new System.Drawing.Size(171, 20);
             this.txEspecie.TabIndex = 52;
             // 
@@ -179,13 +183,13 @@
             this.label7.TabIndex = 51;
             this.label7.Text = "Especie:";
             // 
-            // pictureBox2
+            // pbImagen
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(448, 137);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(323, 177);
-            this.pictureBox2.TabIndex = 50;
-            this.pictureBox2.TabStop = false;
+            this.pbImagen.Location = new System.Drawing.Point(448, 137);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(323, 177);
+            this.pbImagen.TabIndex = 50;
+            this.pbImagen.TabStop = false;
             // 
             // btSalir
             // 
@@ -255,7 +259,7 @@
             this.Controls.Add(this.cbCodigo);
             this.Controls.Add(this.txEspecie);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btSalir);
@@ -274,7 +278,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).EndInit();
@@ -285,7 +289,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbImagen;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

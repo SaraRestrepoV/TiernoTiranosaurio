@@ -68,7 +68,7 @@
             // btBuscar
             // 
             this.btBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btBuscar.Image")));
-            this.btBuscar.Location = new System.Drawing.Point(347, 97);
+            this.btBuscar.Location = new System.Drawing.Point(347, 103);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(105, 28);
             this.btBuscar.TabIndex = 0;

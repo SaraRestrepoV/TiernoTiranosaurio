@@ -37,19 +37,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txCodigo = new System.Windows.Forms.TextBox();
+            this.txNombre = new System.Windows.Forms.TextBox();
+            this.txPrecio = new System.Windows.Forms.TextBox();
+            this.txCantidad = new System.Windows.Forms.TextBox();
+            this.txEspecie = new System.Windows.Forms.TextBox();
+            this.pcImagen = new System.Windows.Forms.PictureBox();
+            this.btCancelar = new System.Windows.Forms.Button();
+            this.btGuardar = new System.Windows.Forms.Button();
+            this.btFoto = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -130,76 +130,79 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Especie:";
             // 
-            // textBox1
+            // txCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 207);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
-            this.textBox1.TabIndex = 9;
+            this.txCodigo.Location = new System.Drawing.Point(151, 207);
+            this.txCodigo.Name = "txCodigo";
+            this.txCodigo.Size = new System.Drawing.Size(183, 20);
+            this.txCodigo.TabIndex = 9;
             // 
-            // textBox2
+            // txNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(151, 253);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 20);
-            this.textBox2.TabIndex = 10;
+            this.txNombre.Location = new System.Drawing.Point(151, 253);
+            this.txNombre.Name = "txNombre";
+            this.txNombre.Size = new System.Drawing.Size(183, 20);
+            this.txNombre.TabIndex = 10;
             // 
-            // textBox3
+            // txPrecio
             // 
-            this.textBox3.Location = new System.Drawing.Point(151, 308);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 20);
-            this.textBox3.TabIndex = 11;
+            this.txPrecio.Location = new System.Drawing.Point(151, 308);
+            this.txPrecio.Name = "txPrecio";
+            this.txPrecio.Size = new System.Drawing.Size(183, 20);
+            this.txPrecio.TabIndex = 11;
             // 
-            // textBox4
+            // txCantidad
             // 
-            this.textBox4.Location = new System.Drawing.Point(151, 357);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 20);
-            this.textBox4.TabIndex = 12;
+            this.txCantidad.Location = new System.Drawing.Point(151, 357);
+            this.txCantidad.Name = "txCantidad";
+            this.txCantidad.Size = new System.Drawing.Size(183, 20);
+            this.txCantidad.TabIndex = 12;
             // 
-            // textBox5
+            // txEspecie
             // 
-            this.textBox5.Location = new System.Drawing.Point(151, 409);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 20);
-            this.textBox5.TabIndex = 13;
+            this.txEspecie.Location = new System.Drawing.Point(151, 409);
+            this.txEspecie.Name = "txEspecie";
+            this.txEspecie.Size = new System.Drawing.Size(183, 20);
+            this.txEspecie.TabIndex = 13;
             // 
-            // button1
+            // pcImagen
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(486, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 42);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = true;
+            this.pcImagen.Location = new System.Drawing.Point(398, 204);
+            this.pcImagen.Name = "pcImagen";
+            this.pcImagen.Size = new System.Drawing.Size(323, 182);
+            this.pcImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcImagen.TabIndex = 17;
+            this.pcImagen.TabStop = false;
             // 
-            // button2
+            // btCancelar
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(60, 481);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 43);
-            this.button2.TabIndex = 15;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
+            this.btCancelar.Location = new System.Drawing.Point(610, 481);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(144, 43);
+            this.btCancelar.TabIndex = 16;
+            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
-            // button3
+            // btGuardar
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(610, 481);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 43);
-            this.button3.TabIndex = 16;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btGuardar.Image")));
+            this.btGuardar.Location = new System.Drawing.Point(60, 481);
+            this.btGuardar.Name = "btGuardar";
+            this.btGuardar.Size = new System.Drawing.Size(143, 43);
+            this.btGuardar.TabIndex = 15;
+            this.btGuardar.UseVisualStyleBackColor = true;
+            this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
             // 
-            // pictureBox2
+            // btFoto
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(398, 204);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(323, 182);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
+            this.btFoto.Image = ((System.Drawing.Image)(resources.GetObject("btFoto.Image")));
+            this.btFoto.Location = new System.Drawing.Point(486, 404);
+            this.btFoto.Name = "btFoto";
+            this.btFoto.Size = new System.Drawing.Size(145, 42);
+            this.btFoto.TabIndex = 14;
+            this.btFoto.UseVisualStyleBackColor = true;
+            this.btFoto.Click += new System.EventHandler(this.button1_Click);
             // 
             // Agregar
             // 
@@ -207,15 +210,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(784, 545);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pcImagen);
+            this.Controls.Add(this.btCancelar);
+            this.Controls.Add(this.btGuardar);
+            this.Controls.Add(this.btFoto);
+            this.Controls.Add(this.txEspecie);
+            this.Controls.Add(this.txCantidad);
+            this.Controls.Add(this.txPrecio);
+            this.Controls.Add(this.txNombre);
+            this.Controls.Add(this.txCodigo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -228,7 +231,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,14 +247,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txCodigo;
+        private System.Windows.Forms.TextBox txNombre;
+        private System.Windows.Forms.TextBox txPrecio;
+        private System.Windows.Forms.TextBox txCantidad;
+        private System.Windows.Forms.TextBox txEspecie;
+        private System.Windows.Forms.Button btFoto;
+        private System.Windows.Forms.Button btGuardar;
+        private System.Windows.Forms.Button btCancelar;
+        private System.Windows.Forms.PictureBox pcImagen;
     }
 }

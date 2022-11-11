@@ -22,23 +22,13 @@ namespace TiernoTiranosaurioI
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void PorNomb_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
+            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.ESPECIE' Puede moverla o quitarla según sea necesario.
+            this.eSPECIETableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.ESPECIE);
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txCodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PorNombre_Load(object sender, EventArgs e)
-        {
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
@@ -47,7 +37,7 @@ namespace TiernoTiranosaurioI
             {
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
                 string nombre = cbNombre.Text;
-                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.NOMBRE =" + "'yorkshire'";
+                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.NOMBRE = '" + nombre + "'";
                 try
                 {
                     objTabla = DB.consulta(ConsultaSQL, objConector);
@@ -62,7 +52,7 @@ namespace TiernoTiranosaurioI
                         MessageBox.Show("El animal no existe.");
                         txCodigo.Text = "";
                         txPrecio.Text = "";
-                        txCantidad.Text = "";                     
+                        txCantidad.Text = "";
                     }
                 }
                 catch (SqlException exx)
