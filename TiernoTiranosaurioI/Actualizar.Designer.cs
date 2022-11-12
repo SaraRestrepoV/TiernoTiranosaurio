@@ -56,7 +56,7 @@
             // pcImagen
             // 
             this.pcImagen.Location = new System.Drawing.Point(593, 251);
-            this.pcImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcImagen.Margin = new System.Windows.Forms.Padding(4);
             this.pcImagen.Name = "pcImagen";
             this.pcImagen.Size = new System.Drawing.Size(431, 224);
             this.pcImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -67,7 +67,7 @@
             // 
             this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
             this.btSalir.Location = new System.Drawing.Point(809, 588);
-            this.btSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(192, 53);
             this.btSalir.TabIndex = 31;
@@ -78,7 +78,7 @@
             // 
             this.btGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btGuardar.Image")));
             this.btGuardar.Location = new System.Drawing.Point(76, 588);
-            this.btGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(191, 53);
             this.btGuardar.TabIndex = 30;
@@ -89,7 +89,7 @@
             // 
             this.btFoto.Image = ((System.Drawing.Image)(resources.GetObject("btFoto.Image")));
             this.btFoto.Location = new System.Drawing.Point(699, 500);
-            this.btFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btFoto.Margin = new System.Windows.Forms.Padding(4);
             this.btFoto.Name = "btFoto";
             this.btFoto.Size = new System.Drawing.Size(193, 52);
             this.btFoto.TabIndex = 29;
@@ -99,7 +99,7 @@
             // txEspecie
             // 
             this.txEspecie.Location = new System.Drawing.Point(168, 500);
-            this.txEspecie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txEspecie.Margin = new System.Windows.Forms.Padding(4);
             this.txEspecie.Name = "txEspecie";
             this.txEspecie.Size = new System.Drawing.Size(243, 22);
             this.txEspecie.TabIndex = 28;
@@ -107,7 +107,7 @@
             // txCantidad
             // 
             this.txCantidad.Location = new System.Drawing.Point(168, 436);
-            this.txCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txCantidad.Name = "txCantidad";
             this.txCantidad.Size = new System.Drawing.Size(243, 22);
             this.txCantidad.TabIndex = 27;
@@ -115,7 +115,7 @@
             // txPrecio
             // 
             this.txPrecio.Location = new System.Drawing.Point(168, 375);
-            this.txPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txPrecio.Name = "txPrecio";
             this.txPrecio.Size = new System.Drawing.Size(243, 22);
             this.txPrecio.TabIndex = 26;
@@ -123,7 +123,7 @@
             // txNombre
             // 
             this.txNombre.Location = new System.Drawing.Point(168, 308);
-            this.txNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txNombre.Name = "txNombre";
             this.txNombre.Size = new System.Drawing.Size(243, 22);
             this.txNombre.TabIndex = 25;
@@ -131,7 +131,7 @@
             // txCodigo
             // 
             this.txCodigo.Location = new System.Drawing.Point(168, 251);
-            this.txCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txCodigo.Name = "txCodigo";
             this.txCodigo.ReadOnly = true;
             this.txCodigo.Size = new System.Drawing.Size(243, 22);
@@ -197,7 +197,7 @@
             this.panel1.BackColor = System.Drawing.Color.YellowGreen;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-3, -4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1045, 181);
             this.panel1.TabIndex = 18;
@@ -207,7 +207,7 @@
             this.panel2.BackColor = System.Drawing.Color.Azure;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(361, -2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(336, 183);
             this.panel2.TabIndex = 3;
@@ -216,7 +216,7 @@
             // 
             this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(64, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(213, 172);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,7 +247,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Actualizar";
             this.Text = "Actualizar";
             this.Load += new System.EventHandler(this.Actualizar_Load);
@@ -261,8 +261,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pcImagen;
         private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.Button btFoto;
@@ -280,5 +278,6 @@
         public System.Windows.Forms.TextBox txNombre;
         public System.Windows.Forms.TextBox txCodigo;
         private System.Windows.Forms.OpenFileDialog openFileDialogAbrir;
+        public System.Windows.Forms.PictureBox pcImagen;
     }
 }

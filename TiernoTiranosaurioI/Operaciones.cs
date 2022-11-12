@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Policy;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+
 
 namespace TiernoTiranosaurioI
 {
@@ -20,6 +22,10 @@ namespace TiernoTiranosaurioI
         public static string precioDG;
         public static string cantidadDG;
         public static string especieDG;
+       // public static string imagen;
+        SqlConnection objConector;
+        SqlDataReader objTabla;
+
 
         public Operaciones()
         {
@@ -81,8 +87,22 @@ namespace TiernoTiranosaurioI
                 objAct.txPrecio.Text = precioDG;
                 objAct.txCantidad.Text = cantidadDG;
                 objAct.txEspecie.Text = especieDG;
-            }        
-          
+
+                objConector = DB.conectar("TIERNOTIRANOSAURIO");
+                int codigo = Int32.Parse(codigoDG);
+                string ConsultaSQL = "SELECT * FROM MASCOTAS WHERE CODIGO =" + codigo;
+                objTabla = DB.consulta(ConsultaSQL, objConector);
+                if (objTabla.Read())
+                {
+                    string imagen = objTabla[1].ToString();
+                    Image img = Image.FromFile(imagen);
+                    objAct.pcImagen.Image = img;
+                }
+                
+               
+
+            }
+
         }
 
         private void dgvAnimales_CellClick(object sender, DataGridViewCellEventArgs e)

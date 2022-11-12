@@ -32,6 +32,7 @@ namespace TiernoTiranosaurioI
             
             try
             {
+                cbCodigo.Enabled = false;
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
                 int codigo = Int32.Parse(cbCodigo.Text);
                 string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;               
@@ -86,6 +87,8 @@ namespace TiernoTiranosaurioI
             txCantidad.Text = "";
             txPrecio.Text = "";
             pbImagen.Image = null;
+            cbCodigo.Enabled = true;
+            Anuncio.Visible = false;
         }
 
         private void btSalir_Click(object sender, EventArgs e)
