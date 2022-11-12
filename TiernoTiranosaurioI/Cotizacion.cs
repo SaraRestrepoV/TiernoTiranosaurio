@@ -38,7 +38,6 @@ namespace TiernoTiranosaurioI
         {
             try
             {
-
                 if (cbCodigo.Text != "" && cbNombre.Text != "" && txPrecio.Text != "" && txCantidad.Text != "")
                 {                  
                     ListaVenta[Fila, 0] = cbCodigo.Text;
