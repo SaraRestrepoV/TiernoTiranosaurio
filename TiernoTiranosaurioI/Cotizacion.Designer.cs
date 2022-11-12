@@ -47,6 +47,7 @@
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IVA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btBuscarNombre = new System.Windows.Forms.Button();
             this.cbNombre = new System.Windows.Forms.ComboBox();
             this.btCotizar = new System.Windows.Forms.Button();
             this.cbCodigo = new System.Windows.Forms.ComboBox();
@@ -59,12 +60,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txPrecio = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btBuscarCodigo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.btBuscarNombre = new System.Windows.Forms.Button();
-            this.btBuscarCodigo = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gbFactura.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
@@ -130,6 +130,7 @@
             this.txCedula.Name = "txCedula";
             this.txCedula.Size = new System.Drawing.Size(148, 20);
             this.txCedula.TabIndex = 25;
+            this.txCedula.TextChanged += new System.EventHandler(this.txCedula_TextChanged);
             this.txCedula.Leave += new System.EventHandler(this.txCedula_Leave);
             // 
             // label12
@@ -244,6 +245,16 @@
             this.IVA.HeaderText = "IVA 19%";
             this.IVA.Name = "IVA";
             // 
+            // btBuscarNombre
+            // 
+            this.btBuscarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btBuscarNombre.Image")));
+            this.btBuscarNombre.Location = new System.Drawing.Point(306, 72);
+            this.btBuscarNombre.Name = "btBuscarNombre";
+            this.btBuscarNombre.Size = new System.Drawing.Size(105, 28);
+            this.btBuscarNombre.TabIndex = 26;
+            this.btBuscarNombre.UseVisualStyleBackColor = true;
+            this.btBuscarNombre.Click += new System.EventHandler(this.btBuscarNombre_Click);
+            // 
             // cbNombre
             // 
             this.cbNombre.Cursor = System.Windows.Forms.Cursors.Default;
@@ -349,6 +360,7 @@
             // 
             this.txPrecio.Location = new System.Drawing.Point(141, 121);
             this.txPrecio.Name = "txPrecio";
+            this.txPrecio.ReadOnly = true;
             this.txPrecio.Size = new System.Drawing.Size(141, 20);
             this.txPrecio.TabIndex = 6;
             // 
@@ -361,6 +373,16 @@
             this.label7.Size = new System.Drawing.Size(106, 20);
             this.label7.TabIndex = 14;
             this.label7.Text = "Total a pagar:";
+            // 
+            // btBuscarCodigo
+            // 
+            this.btBuscarCodigo.Image = ((System.Drawing.Image)(resources.GetObject("btBuscarCodigo.Image")));
+            this.btBuscarCodigo.Location = new System.Drawing.Point(306, 24);
+            this.btBuscarCodigo.Name = "btBuscarCodigo";
+            this.btBuscarCodigo.Size = new System.Drawing.Size(105, 28);
+            this.btBuscarCodigo.TabIndex = 0;
+            this.btBuscarCodigo.UseVisualStyleBackColor = true;
+            this.btBuscarCodigo.Click += new System.EventHandler(this.btBuscarCodigo_Click);
             // 
             // label2
             // 
@@ -400,26 +422,6 @@
             this.label10.Size = new System.Drawing.Size(271, 29);
             this.label10.TabIndex = 21;
             this.label10.Text = "Módulo de facturación";
-            // 
-            // btBuscarNombre
-            // 
-            this.btBuscarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btBuscarNombre.Image")));
-            this.btBuscarNombre.Location = new System.Drawing.Point(306, 72);
-            this.btBuscarNombre.Name = "btBuscarNombre";
-            this.btBuscarNombre.Size = new System.Drawing.Size(105, 28);
-            this.btBuscarNombre.TabIndex = 26;
-            this.btBuscarNombre.UseVisualStyleBackColor = true;
-            this.btBuscarNombre.Click += new System.EventHandler(this.btBuscarNombre_Click);
-            // 
-            // btBuscarCodigo
-            // 
-            this.btBuscarCodigo.Image = ((System.Drawing.Image)(resources.GetObject("btBuscarCodigo.Image")));
-            this.btBuscarCodigo.Location = new System.Drawing.Point(306, 24);
-            this.btBuscarCodigo.Name = "btBuscarCodigo";
-            this.btBuscarCodigo.Size = new System.Drawing.Size(105, 28);
-            this.btBuscarCodigo.TabIndex = 0;
-            this.btBuscarCodigo.UseVisualStyleBackColor = true;
-            this.btBuscarCodigo.Click += new System.EventHandler(this.btBuscarCodigo_Click);
             // 
             // Cotizacion
             // 

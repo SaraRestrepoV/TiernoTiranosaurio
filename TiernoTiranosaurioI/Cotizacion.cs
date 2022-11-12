@@ -19,11 +19,14 @@ namespace TiernoTiranosaurioI
         SqlConnection objConector;
         SqlDataReader objTabla;
         public static string imprimirCotizacion = "";
+        public static string infoUsuario = "";
+        ImpresionCotizacion objCotizar = new ImpresionCotizacion();
 
         bool UsuarioVerificado = false;
 
         public Cotizacion()
         {
+
             InitializeComponent();
             DateTime thisDay = DateTime.Today;
             lbFecha.Text = thisDay.ToString("d");
@@ -35,8 +38,9 @@ namespace TiernoTiranosaurioI
         {
             try
             {
+
                 if (cbCodigo.Text != "" && cbNombre.Text != "" && txPrecio.Text != "" && txCantidad.Text != "")
-                {
+                {                  
                     ListaVenta[Fila, 0] = cbCodigo.Text;
                     ListaVenta[Fila, 1] = cbNombre.Text;
                     ListaVenta[Fila, 2] = txPrecio.Text;
@@ -45,7 +49,8 @@ namespace TiernoTiranosaurioI
                     ListaVenta[Fila, 5] = (float.Parse(ListaVenta[Fila, 4]) * 0.19).ToString();
 
                     dgvLista.Rows.Add(ListaVenta[Fila, 0], ListaVenta[Fila, 1], ListaVenta[Fila, 2], ListaVenta[Fila, 3], ListaVenta[Fila, 4], ListaVenta[Fila, 5]);
-            
+
+                    imprimirCotizacion = imprimirCotizacion + " "+ ListaVenta[Fila, 0] + "\t\t " + ListaVenta[Fila, 1] + "\t" + ListaVenta[Fila, 2] + "\t\t" + ListaVenta[Fila, 3]+ "\t\t" + ListaVenta[Fila, 4]+ "\t " + ListaVenta[Fila, 5] + "\r\n";
 
                     Fila = Fila + 1;
                     cbCodigo.Text = cbNombre.Text = txPrecio.Text = txCantidad.Text = "";
@@ -53,7 +58,7 @@ namespace TiernoTiranosaurioI
                     cbCodigo.FindForm();
                 }
                 else
-                {
+                {                   
                     MessageBox.Show("Favor ingrese todos los campos");
                 }
             }
@@ -169,6 +174,9 @@ namespace TiernoTiranosaurioI
                     txApellido.Text = objTabla[2].ToString();
                     UsuarioVerificado = true;
 
+                    infoUsuario = "Datos usuario: \r\n" + "Identificación: " + objTabla[0].ToString() + "\r\nNombre: " + objTabla[1].ToString() + "\r\nApellido: " + objTabla[2].ToString();
+                    txCedula.Enabled = txNombre.Enabled = txApellido.Enabled = false;
+                    
                 }
                 else
                 {
@@ -194,7 +202,12 @@ namespace TiernoTiranosaurioI
                 string ConsultaSQL = "INSERT INTO CLIENTE VALUES (" + cedula + ",'" + nombre + "','" + apellido + "')";
                 int n = DB.operar(ConsultaSQL, objConector);
 
-                if (n > 0) MessageBox.Show("Usuario ingresado");
+                if (n > 0)
+                {
+                    MessageBox.Show("Usuario ingresado");
+                    txCedula.Enabled = txNombre.Enabled = txApellido.Enabled = false;
+                    btInsertar.Enabled = false;
+                }
                 if (n == 0)
                 {
                     MessageBox.Show("No se pudo ingresar el usuario");
@@ -212,17 +225,21 @@ namespace TiernoTiranosaurioI
 
         private void btCotizar_Click(object sender, EventArgs e)
         {
-            ImpresionCotizacion objImpresion = new ImpresionCotizacion();
             
-            objImpresion.Show();
-            imprimirCotizacion = "hola";
 
-            imprimirCotizacion = imprimirCotizacion + " sarita besha puessss.....";
+            objCotizar.Show();
 
-            objImpresion.txImpresion.Text = imprimirCotizacion;
 
+            objCotizar.txDatosMascota.Text = imprimirCotizacion;
+            objCotizar.txDatosUsuario.Text = infoUsuario;
+            infoUsuario = "";
+            imprimirCotizacion = "";
             this.Close();
         }
 
+        private void txCedula_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -117,6 +117,9 @@
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ImpresionCotizacion.aa.resx">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ImpresionCotizacion.resx">
       <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
     </EmbeddedResource>
