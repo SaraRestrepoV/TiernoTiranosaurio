@@ -59,6 +59,11 @@
       <DependentUpon>Agregar.cs</DependentUpon>
     </Compile>
     <Compile Include="clsImagen.cs" />
+    <Compile Include="DataSetFinal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFinal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
     <Compile Include="Eliminar.cs">
       <SubType>Form</SubType>
@@ -146,6 +151,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSetFinal.xsc">
+      <DependentUpon>DataSetFinal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFinal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFinal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFinal.xss">
+      <DependentUpon>DataSetFinal.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -30,8 +30,10 @@ namespace TiernoTiranosaurioI
 
         private void Operaciones_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'dataSetFinal.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter1.Fill(this.dataSetFinal.MASCOTAS);
             // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
-           this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
+          //  this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
             // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.MASCOTAS' Puede moverla o quitarla según sea necesario.
 
         }

@@ -20,14 +20,20 @@ namespace TiernoTiranosaurioI
         public PorNombre()
         {
             InitializeComponent();
+            Anuncio.Visible = false;
+            Anuncio.Enabled = true;
         }
 
         private void PorNomb_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'dataSetFinal.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter1.Fill(this.dataSetFinal.MASCOTAS);
+            // TODO: esta línea de código carga datos en la tabla 'dataSetFinal.ESPECIE' Puede moverla o quitarla según sea necesario.
+            this.eSPECIETableAdapter1.Fill(this.dataSetFinal.ESPECIE);
             // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
+            // this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
             // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.ESPECIE' Puede moverla o quitarla según sea necesario.
-            this.eSPECIETableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.ESPECIE);
+            // this.eSPECIETableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.ESPECIE);
 
         }
 
@@ -43,9 +49,23 @@ namespace TiernoTiranosaurioI
                     objTabla = DB.consulta(ConsultaSQL, objConector);
                     if (objTabla.Read())
                     {
+                        string imagen = objTabla[1].ToString();
                         txCodigo.Text = objTabla[0].ToString();
                         txPrecio.Text = objTabla[3].ToString();
-                        txCantidad.Text = objTabla[4].ToString();
+                        txCantidad.Text = objTabla[4].ToString();                       
+
+
+                        if (string.IsNullOrEmpty(imagen))
+                        {
+                            pbFoto.Image = null;
+                            Anuncio.Visible = true;
+                            Anuncio.Text = "ESTA MASCOTA NO CUENTA CON UNA IMAGEN";
+                        }
+                        else
+                        {
+                            Image img = Image.FromFile(imagen);
+                            pbFoto.Image = img;
+                        }
                     }
                     else
                     {

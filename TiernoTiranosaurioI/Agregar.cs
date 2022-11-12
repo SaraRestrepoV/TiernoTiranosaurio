@@ -15,7 +15,8 @@ namespace TiernoTiranosaurioI
     public partial class Agregar : Form
     {
         SqlConnection objConector;
-     //   SqlDataReader objTabla;
+        //   SqlDataReader objTabla;
+        string nombreArchivo;
         public Agregar()
         {
             InitializeComponent();
@@ -23,13 +24,14 @@ namespace TiernoTiranosaurioI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog fo = new OpenFileDialog();
-            DialogResult rs = fo.ShowDialog();
-            if (rs == DialogResult.OK)
-            {
-                pcImagen.Image = Image.FromFile(fo.FileName);
-                pcImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
+            openFileDialogAbrir.ShowDialog();
+            //nombreArchivo = openFileDialogAbrir.FileName;
+            pcImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+            nombreArchivo = openFileDialogAbrir.FileName.ToString();
+            MessageBox.Show(nombreArchivo); ;
+
+            Image img = Image.FromFile(nombreArchivo);
+            pcImagen.Image = img;
         }
 
         private void btGuardar_Click(object sender, EventArgs e)
@@ -45,10 +47,8 @@ namespace TiernoTiranosaurioI
                 int especie = Int32.Parse(txEspecie.Text);
                 int precio = Int32.Parse(txPrecio.Text);
                 int cantidad = Int32.Parse(txCantidad.Text);
-                byte[] mifoto = clsImagen.ImageToByte(pcImagen.Image);
-                MessageBox.Show("" + mifoto);
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
-                string consultaSql = "insert into MASCOTAS VALUES (" + codigo + ",'" + mifoto + "','" + nombre + "'," + precio + "," + cantidad + "," + especie + ");";
+                string consultaSql = "insert into MASCOTAS VALUES (" + codigo + ",'" + nombreArchivo + "','" + nombre + "'," + precio + "," + cantidad + "," + especie + ");";
                 int n = DB.operar(consultaSql, objConector);
                 if (n > 0)
                 {
