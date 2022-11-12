@@ -20,6 +20,7 @@ namespace TiernoTiranosaurioI
         public static string precioDG;
         public static string cantidadDG;
         public static string especieDG;
+
         public Operaciones()
         {
             InitializeComponent();
