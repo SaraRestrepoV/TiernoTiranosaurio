@@ -77,5 +77,15 @@ namespace TiernoTiranosaurioI
             panelVerde.Visible = false;
 
         }
+
+        private void tsCotizacion_Click(object sender, EventArgs e)
+        {
+            Cotizacion objCotizacion = new Cotizacion();
+            objCotizacion.MdiParent = this;
+            objCotizacion.Show();
+
+            pbDino.Visible = false;
+            panelVerde.Visible = false;
+        }
     }
 }
