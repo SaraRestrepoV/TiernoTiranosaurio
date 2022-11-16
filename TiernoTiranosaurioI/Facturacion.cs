@@ -35,20 +35,29 @@ namespace TiernoTiranosaurioI
                     ListaVenta[Fila, 0] = cbCodigo.Text;
                     ListaVenta[Fila, 1] = cbNombre.Text;
                     ListaVenta[Fila, 2] = txPrecio.Text;
-                    ListaVenta[Fila, 3] = txCantidad.Text;
                     ListaVenta[Fila, 4] = (float.Parse(txPrecio.Text) * float.Parse(txCantidad.Text)).ToString();
                     ListaVenta[Fila, 5] = (float.Parse(ListaVenta[Fila, 4]) * 0.19).ToString();
 
+                    if (float.Parse(txCantidad.Text) <= float.Parse(cantidadInventario))
+                    {
                     dgvLista.Rows.Add(ListaVenta[Fila, 0], ListaVenta[Fila, 1], ListaVenta[Fila, 2], ListaVenta[Fila, 3], ListaVenta[Fila, 4], ListaVenta[Fila, 5]);
 
                     Fila = Fila + 1;
                     cbCodigo.Text = cbNombre.Text = txPrecio.Text = txCantidad.Text = "";
+                    }
+                    else
+                    {
+                        txPrecio.Text = "";
+                        txCantidad.Text = "";
+
+                    }
 
                     cbCodigo.FindForm();
                 }
                 else
                 {
                     MessageBox.Show("Favor ingrese todos los campos");
+                    txPrecio.Text = "";
                 }
             }
             catch
