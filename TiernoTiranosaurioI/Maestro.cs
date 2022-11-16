@@ -66,5 +66,26 @@ namespace TiernoTiranosaurioI
             pbDino.Visible = false;
             panelVerde.Visible = false;
         }
+
+        private void tsFactura_Click(object sender, EventArgs e)
+        {
+            Facturacion objFactura = new Facturacion();
+            objFactura.MdiParent = this;
+            objFactura.Show();
+
+            pbDino.Visible = false;
+            panelVerde.Visible = false;
+
+        }
+
+        private void tsCotizacion_Click(object sender, EventArgs e)
+        {
+            Cotizacion objCotizacion = new Cotizacion();
+            objCotizacion.MdiParent = this;
+            objCotizacion.Show();
+
+            pbDino.Visible = false;
+            panelVerde.Visible = false;
+        }
     }
 }

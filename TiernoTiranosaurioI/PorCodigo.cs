@@ -20,12 +20,7 @@ namespace TiernoTiranosaurioI
         public PorCodigo()
         {
             InitializeComponent();
-        }
-
-        private void PorCodigo_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet1.MASCOTAS);
+            
 
         }
 
@@ -35,10 +30,10 @@ namespace TiernoTiranosaurioI
             {
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
                 int codigo = Int32.Parse(cbCodigo.Text);
-                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;               
+                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;
                 try
                 {
-                    objTabla = DB.consulta(ConsultaSQL, objConector);                  
+                    objTabla = DB.consulta(ConsultaSQL, objConector);
                     if (objTabla.Read())
                     {
                         txNombre.Text = objTabla[2].ToString();
@@ -64,6 +59,7 @@ namespace TiernoTiranosaurioI
             {
                 MessageBox.Show("Error en la conexión " + ex.Message);
             }
+            
         }
 
         private void btBorrar_Click(object sender, EventArgs e)
@@ -78,5 +74,13 @@ namespace TiernoTiranosaurioI
         {
             this.Close();
         }
+
+        private void PorCodigo_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
+
+        }
+                       
     }
 }

@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Operaciones));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tIERNOTIRANOSAURIODataSet1 = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet1();
             this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mASCOTASTableAdapter = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet1TableAdapters.MASCOTASTableAdapter();
             this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOMBREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRECIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +48,6 @@
             this.btEliminar = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -76,17 +73,13 @@
             // 
             // tIERNOTIRANOSAURIODataSet1
             // 
-            this.tIERNOTIRANOSAURIODataSet1.DataSetName = "TIERNOTIRANOSAURIODataSet1";
-            this.tIERNOTIRANOSAURIODataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // mASCOTASBindingSource
             // 
             this.mASCOTASBindingSource.DataMember = "MASCOTAS";
-            this.mASCOTASBindingSource.DataSource = this.tIERNOTIRANOSAURIODataSet1;
             // 
             // mASCOTASTableAdapter
             // 
-            this.mASCOTASTableAdapter.ClearBeforeFill = true;
             // 
             // cODIGODataGridViewTextBoxColumn
             // 
@@ -236,7 +229,6 @@
             this.Text = "Operaciones";
             this.Load += new System.EventHandler(this.Operaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -249,9 +241,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private TIERNOTIRANOSAURIODataSet1 tIERNOTIRANOSAURIODataSet1;
         private System.Windows.Forms.BindingSource mASCOTASBindingSource;
-        private TIERNOTIRANOSAURIODataSet1TableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn cODIGODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nOMBREDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRECIODataGridViewTextBoxColumn;

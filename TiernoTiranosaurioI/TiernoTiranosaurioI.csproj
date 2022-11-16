@@ -52,12 +52,24 @@
     <Compile Include="Agregar.Designer.cs">
       <DependentUpon>Agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
     <Compile Include="Facturacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpresionCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpresionCotizacion.Designer.cs">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -91,16 +103,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TIERNOTIRANOSAURIODataSet1.Designer.cs">
+    <Compile Include="TIERNOTIRANOSAURIODataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TIERNOTIRANOSAURIODataSet1.xsd</DependentUpon>
+      <DependentUpon>TIERNOTIRANOSAURIODataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Agregar.resx">
       <DependentUpon>Agregar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpresionCotizacion.aa.resx">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpresionCotizacion.resx">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -136,16 +157,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TIERNOTIRANOSAURIODataSet1.xsc">
-      <DependentUpon>TIERNOTIRANOSAURIODataSet1.xsd</DependentUpon>
+    <None Include="TIERNOTIRANOSAURIODataSet.xsc">
+      <DependentUpon>TIERNOTIRANOSAURIODataSet.xsd</DependentUpon>
     </None>
-    <None Include="TIERNOTIRANOSAURIODataSet1.xsd">
+    <None Include="TIERNOTIRANOSAURIODataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TIERNOTIRANOSAURIODataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>TIERNOTIRANOSAURIODataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="TIERNOTIRANOSAURIODataSet1.xss">
-      <DependentUpon>TIERNOTIRANOSAURIODataSet1.xsd</DependentUpon>
+    <None Include="TIERNOTIRANOSAURIODataSet.xss">
+      <DependentUpon>TIERNOTIRANOSAURIODataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
