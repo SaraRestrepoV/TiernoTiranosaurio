@@ -22,7 +22,7 @@ namespace TiernoTiranosaurioI
         public static string precioDG;
         public static string cantidadDG;
         public static string especieDG;
-       // public static string imagen;
+        // public static string imagen;
         SqlConnection objConector;
         SqlDataReader objTabla;
 
@@ -36,11 +36,6 @@ namespace TiernoTiranosaurioI
 
         private void Operaciones_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'dataSetFinal.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter1.Fill(this.dataSetFinal.MASCOTAS);
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
-          //  this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
-            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet1.MASCOTAS' Puede moverla o quitarla según sea necesario.
 
         }
 
@@ -70,14 +65,15 @@ namespace TiernoTiranosaurioI
             }
 
         }
-       
+
 
         private void btEditar_Click(object sender, EventArgs e)
         {
             Actualizar objAct = new Actualizar();
             objAct.Show();
 
-            if (codigoDG == "") {
+            if (codigoDG == "")
+            {
                 MessageBox.Show("Seleccione una fila a editar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -93,21 +89,20 @@ namespace TiernoTiranosaurioI
                 string ConsultaSQL = "SELECT * FROM MASCOTAS WHERE CODIGO =" + codigo;
                 objTabla = DB.consulta(ConsultaSQL, objConector);
                 if (objTabla.Read())
-                {                   
+                {
                     string imagen = objTabla[1].ToString();
 
-                    if (string.IsNullOrEmpty(imagen)){
+                    if (string.IsNullOrEmpty(imagen))
+                    {
                         objAct.pcImagen.Image = null;
-                     }
+                    }
                     else
                     {
                         Image img = Image.FromFile(imagen);
                         objAct.pcImagen.Image = img;
-                       
+
                     }
                 }
-                
-               
 
             }
 

@@ -52,16 +52,13 @@
             this.tIERNOTIRANOSAURIODataSet = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet();
             this.mASCOTASTableAdapter = new TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSetTableAdapters.MASCOTASTableAdapter();
             this.Anuncio = new System.Windows.Forms.TextBox();
-            this.dataSetFinal = new TiernoTiranosaurioI.DataSetFinal();
             this.mASCOTASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.mASCOTASTableAdapter1 = new TiernoTiranosaurioI.DataSetFinalTableAdapters.MASCOTASTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFinal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -275,17 +272,13 @@
             // 
             // dataSetFinal
             // 
-            this.dataSetFinal.DataSetName = "DataSetFinal";
-            this.dataSetFinal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // mASCOTASBindingSource1
             // 
             this.mASCOTASBindingSource1.DataMember = "MASCOTAS";
-            this.mASCOTASBindingSource1.DataSource = this.dataSetFinal;
             // 
             // mASCOTASTableAdapter1
             // 
-            this.mASCOTASTableAdapter1.ClearBeforeFill = true;
             // 
             // PorCodigo
             // 
@@ -321,7 +314,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIERNOTIRANOSAURIODataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFinal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -352,9 +344,7 @@
         private System.Windows.Forms.BindingSource mASCOTASBindingSource;
         private TIERNOTIRANOSAURIODataSetTableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
         private System.Windows.Forms.TextBox Anuncio;
-        private DataSetFinal dataSetFinal;
         private System.Windows.Forms.BindingSource mASCOTASBindingSource1;
-        private DataSetFinalTableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter1;
         //    private TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet1 tIERNOTIRANOSAURIODataSet1;
         // private TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet1TableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
     }
