@@ -28,98 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Operaciones));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nOMBREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pRECIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cANTIDADDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eSPECIEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgvAnimales = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btNuevo = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btEliminar = new System.Windows.Forms.Button();
+            this.lbFecha = new System.Windows.Forms.Label();
             this.btSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btEliminar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btNuevo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAnimales)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvAnimales
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cODIGODataGridViewTextBoxColumn,
-            this.nOMBREDataGridViewTextBoxColumn,
-            this.pRECIODataGridViewTextBoxColumn,
-            this.cANTIDADDataGridViewTextBoxColumn,
-            this.eSPECIEDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mASCOTASBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 272);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(541, 257);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tIERNOTIRANOSAURIODataSet1
-            // 
-            // 
-            // mASCOTASBindingSource
-            // 
-            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
-            // 
-            // mASCOTASTableAdapter
-            // 
-            // 
-            // cODIGODataGridViewTextBoxColumn
-            // 
-            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
-            // 
-            // nOMBREDataGridViewTextBoxColumn
-            // 
-            this.nOMBREDataGridViewTextBoxColumn.DataPropertyName = "NOMBRE";
-            this.nOMBREDataGridViewTextBoxColumn.HeaderText = "NOMBRE";
-            this.nOMBREDataGridViewTextBoxColumn.Name = "nOMBREDataGridViewTextBoxColumn";
-            // 
-            // pRECIODataGridViewTextBoxColumn
-            // 
-            this.pRECIODataGridViewTextBoxColumn.DataPropertyName = "PRECIO";
-            this.pRECIODataGridViewTextBoxColumn.HeaderText = "PRECIO";
-            this.pRECIODataGridViewTextBoxColumn.Name = "pRECIODataGridViewTextBoxColumn";
-            // 
-            // cANTIDADDataGridViewTextBoxColumn
-            // 
-            this.cANTIDADDataGridViewTextBoxColumn.DataPropertyName = "CANTIDAD";
-            this.cANTIDADDataGridViewTextBoxColumn.HeaderText = "CANTIDAD";
-            this.cANTIDADDataGridViewTextBoxColumn.Name = "cANTIDADDataGridViewTextBoxColumn";
-            // 
-            // eSPECIEDataGridViewTextBoxColumn
-            // 
-            this.eSPECIEDataGridViewTextBoxColumn.DataPropertyName = "ESPECIE";
-            this.eSPECIEDataGridViewTextBoxColumn.HeaderText = "ESPECIE";
-            this.eSPECIEDataGridViewTextBoxColumn.Name = "eSPECIEDataGridViewTextBoxColumn";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.dgvAnimales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAnimales.Location = new System.Drawing.Point(65, 220);
+            this.dgvAnimales.Name = "dgvAnimales";
+            this.dgvAnimales.RowHeadersWidth = 51;
+            this.dgvAnimales.Size = new System.Drawing.Size(541, 257);
+            this.dgvAnimales.TabIndex = 0;
+            this.dgvAnimales.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAnimales_CellClick);
+            this.dgvAnimales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAnimales_CellContentClick);
             // 
             // panel1
             // 
@@ -139,100 +75,112 @@
             this.panel2.Size = new System.Drawing.Size(252, 147);
             this.panel2.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.YellowGreen;
-            this.label1.Location = new System.Drawing.Point(59, 193);
+            this.label1.Location = new System.Drawing.Point(56, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 33);
+            this.label1.Size = new System.Drawing.Size(289, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Módulo de operaciones";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(534, 192);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(531, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 35);
+            this.label2.Size = new System.Drawing.Size(86, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha:";
             // 
-            // label3
+            // lbFecha
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Quicksand", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(628, 198);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 28);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "07/11/2022";
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.ForeColor = System.Drawing.Color.Black;
+            this.lbFecha.Location = new System.Drawing.Point(625, 172);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(100, 24);
+            this.lbFecha.TabIndex = 4;
+            this.lbFecha.Text = "07/11/2022";
+            // 
+            // btSalir
+            // 
+            this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
+            this.btSalir.Location = new System.Drawing.Point(652, 532);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(116, 33);
+            this.btSalir.TabIndex = 8;
+            this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
+            // btEliminar
+            // 
+            this.btEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btEliminar.Image")));
+            this.btEliminar.Location = new System.Drawing.Point(351, 512);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(125, 53);
+            this.btEliminar.TabIndex = 7;
+            this.btEliminar.UseVisualStyleBackColor = true;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
+            // 
+            // btEditar
+            // 
+            this.btEditar.Image = ((System.Drawing.Image)(resources.GetObject("btEditar.Image")));
+            this.btEditar.Location = new System.Drawing.Point(215, 512);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(130, 53);
+            this.btEditar.TabIndex = 6;
+            this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // btNuevo
             // 
             this.btNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btNuevo.Image")));
-            this.btNuevo.Location = new System.Drawing.Point(65, 564);
+            this.btNuevo.Location = new System.Drawing.Point(65, 512);
             this.btNuevo.Name = "btNuevo";
             this.btNuevo.Size = new System.Drawing.Size(144, 53);
             this.btNuevo.TabIndex = 5;
             this.btNuevo.UseVisualStyleBackColor = true;
             this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
             // 
-            // btEditar
-            // 
-            this.btEditar.Image = ((System.Drawing.Image)(resources.GetObject("btEditar.Image")));
-            this.btEditar.Location = new System.Drawing.Point(215, 564);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(130, 53);
-            this.btEditar.TabIndex = 6;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btEliminar
-            // 
-            this.btEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btEliminar.Image")));
-            this.btEliminar.Location = new System.Drawing.Point(351, 564);
-            this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(125, 53);
-            this.btEliminar.TabIndex = 7;
-            this.btEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btSalir
-            // 
-            this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
-            this.btSalir.Location = new System.Drawing.Point(652, 584);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(116, 33);
-            this.btSalir.TabIndex = 8;
-            this.btSalir.UseVisualStyleBackColor = true;
-            // 
             // Operaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(780, 640);
+            this.ClientSize = new System.Drawing.Size(780, 594);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btNuevo);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbFecha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvAnimales);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Operaciones";
             this.Text = "Operaciones";
             this.Load += new System.EventHandler(this.Operaciones_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAnimales)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,8 +188,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource mASCOTASBindingSource;
+        private System.Windows.Forms.DataGridView dgvAnimales;
         private System.Windows.Forms.DataGridViewTextBoxColumn cODIGODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nOMBREDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRECIODataGridViewTextBoxColumn;
@@ -252,10 +199,15 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Button btNuevo;
         private System.Windows.Forms.Button btEditar;
         private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.Button btSalir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ESPECIE;
     }
 }

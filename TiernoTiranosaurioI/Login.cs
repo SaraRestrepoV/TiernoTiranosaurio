@@ -106,6 +106,15 @@ namespace TiernoTiranosaurioI
                             objMenu.ShowDialog();
                            
                         }
+                        else
+                        {
+                            MessageBox.Show("Contraseña incorrecta");
+                            txContraseña.Visible = false;
+                            txUsuario.Enabled = true;
+                            lbContraseña.Visible = false;
+                            btIniciar.Visible = false;
+                            button1.Visible = true;
+                        }
                     }
                     else
                     {

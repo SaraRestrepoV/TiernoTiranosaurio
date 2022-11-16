@@ -20,49 +20,53 @@ namespace TiernoTiranosaurioI
         public PorNombre()
         {
             InitializeComponent();
+            Anuncio.Visible = false;
+            Anuncio.Enabled = true;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void PorNomb_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txCodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PorNombre_Load(object sender, EventArgs e)
-        {
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
             try
             {
+                cbEspecie.Enabled = false;
+                cbNombre.Enabled = false;
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
                 string nombre = cbNombre.Text;
-                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.NOMBRE =" + "'yorkshire'";
+                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.NOMBRE = '" + nombre + "'";
                 try
                 {
                     objTabla = DB.consulta(ConsultaSQL, objConector);
                     if (objTabla.Read())
                     {
+                        string imagen = objTabla[1].ToString();
                         txCodigo.Text = objTabla[0].ToString();
                         txPrecio.Text = objTabla[3].ToString();
-                        txCantidad.Text = objTabla[4].ToString();
+                        txCantidad.Text = objTabla[4].ToString();                       
+
+
+                        if (string.IsNullOrEmpty(imagen))
+                        {
+                            pbFoto.Image = null;
+                            Anuncio.Visible = true;
+                            Anuncio.Text = "ESTA MASCOTA NO CUENTA CON UNA IMAGEN";
+                        }
+                        else
+                        {
+                            Image img = Image.FromFile(imagen);
+                            pbFoto.Image = img;
+                        }
                     }
                     else
                     {
                         MessageBox.Show("El animal no existe.");
                         txCodigo.Text = "";
                         txPrecio.Text = "";
-                        txCantidad.Text = "";                     
+                        txCantidad.Text = "";
                     }
                 }
                 catch (SqlException exx)
@@ -81,6 +85,9 @@ namespace TiernoTiranosaurioI
             txPrecio.Text = "";
             txCodigo.Text = "";
             txCantidad.Text = "";
+            cbEspecie.Enabled = false;
+            cbNombre.Enabled = false;
+            Anuncio.Visible = false;
         }
 
         private void btSalir_Click(object sender, EventArgs e)
