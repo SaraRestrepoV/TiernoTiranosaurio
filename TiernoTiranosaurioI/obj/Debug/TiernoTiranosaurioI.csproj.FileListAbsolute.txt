@@ -84,3 +84,5 @@ C:\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.G
 C:\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.csproj.CoreCompileInputs.cache
 C:\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.exe
 C:\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.pdb
+C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Actualizar.resources
+C:\Users\lukas\OneDrive\Documentos\2 Estudio Desarollo\TiernoTiranosaurio\TiernoTiranosaurioI\obj\Debug\TiernoTiranosaurioI.Eliminar.resources
