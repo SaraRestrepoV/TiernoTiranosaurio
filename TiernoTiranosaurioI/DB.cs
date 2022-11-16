@@ -12,7 +12,7 @@ namespace TiernoTiranosaurioI
     {
         public static SqlConnection conectar(string nomBD)
         {
-            SqlConnection objConectar = new SqlConnection("Data Source=ROMANOV\\SQLEXPRESS;Initial Catalog=" + nomBD + ";Integrated Security=SSPI;");
+            SqlConnection objConectar = new SqlConnection("Data Source=localhost;Initial Catalog=" + nomBD + ";Integrated Security=SSPI;");
             try
             {
                 objConectar.Open();               

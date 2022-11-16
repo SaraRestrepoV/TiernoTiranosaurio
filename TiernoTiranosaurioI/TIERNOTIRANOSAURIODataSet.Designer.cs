@@ -20,9 +20,9 @@ namespace TiernoTiranosaurioI {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("TIERNOTIRANOSAURIODataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("TIERNOTIRANOSAURIODataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class TIERNOTIRANOSAURIODataSet1 : global::System.Data.DataSet {
+    public partial class TIERNOTIRANOSAURIODataSet : global::System.Data.DataSet {
         
         private CLIENTEDataTable tableCLIENTE;
         
@@ -50,9 +50,9 @@ namespace TiernoTiranosaurioI {
         
         private global::System.Data.DataRelation relationFK_ID_CLIENTE_FACTURA;
         
-        private global::System.Data.DataRelation relationFK__MASCOTAS__ESPECI__4316F928;
+        private global::System.Data.DataRelation relationFK__MASCOTAS__ESPECI__30F848ED;
         
-        private global::System.Data.DataRelation relationFK__SEXO__CODIGO__45F365D3;
+        private global::System.Data.DataRelation relationFK__SEXO__CODIGO__33D4B598;
         
         private global::System.Data.DataRelation relationFK_ID_CLIENTE;
         
@@ -60,7 +60,7 @@ namespace TiernoTiranosaurioI {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public TIERNOTIRANOSAURIODataSet1() {
+        public TIERNOTIRANOSAURIODataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -71,7 +71,7 @@ namespace TiernoTiranosaurioI {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected TIERNOTIRANOSAURIODataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected TIERNOTIRANOSAURIODataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -261,7 +261,7 @@ namespace TiernoTiranosaurioI {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            TIERNOTIRANOSAURIODataSet1 cln = ((TIERNOTIRANOSAURIODataSet1)(base.Clone()));
+            TIERNOTIRANOSAURIODataSet cln = ((TIERNOTIRANOSAURIODataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -404,17 +404,17 @@ namespace TiernoTiranosaurioI {
             this.relationFK_ID_MASCOTA_DETALLE = this.Relations["FK_ID_MASCOTA_DETALLE"];
             this.relationFK_ID_CLIENTE_DIRECCION = this.Relations["FK_ID_CLIENTE_DIRECCION"];
             this.relationFK_ID_CLIENTE_FACTURA = this.Relations["FK_ID_CLIENTE_FACTURA"];
-            this.relationFK__MASCOTAS__ESPECI__4316F928 = this.Relations["FK__MASCOTAS__ESPECI__4316F928"];
-            this.relationFK__SEXO__CODIGO__45F365D3 = this.Relations["FK__SEXO__CODIGO__45F365D3"];
+            this.relationFK__MASCOTAS__ESPECI__30F848ED = this.Relations["FK__MASCOTAS__ESPECI__30F848ED"];
+            this.relationFK__SEXO__CODIGO__33D4B598 = this.Relations["FK__SEXO__CODIGO__33D4B598"];
             this.relationFK_ID_CLIENTE = this.Relations["FK_ID_CLIENTE"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "TIERNOTIRANOSAURIODataSet1";
+            this.DataSetName = "TIERNOTIRANOSAURIODataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/TIERNOTIRANOSAURIODataSet1.xsd";
+            this.Namespace = "http://tempuri.org/TIERNOTIRANOSAURIODataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCLIENTE = new CLIENTEDataTable();
@@ -451,14 +451,14 @@ namespace TiernoTiranosaurioI {
                         this.tableCLIENTE.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableFACTURA.ID_CLIENTEColumn}, false);
             this.Relations.Add(this.relationFK_ID_CLIENTE_FACTURA);
-            this.relationFK__MASCOTAS__ESPECI__4316F928 = new global::System.Data.DataRelation("FK__MASCOTAS__ESPECI__4316F928", new global::System.Data.DataColumn[] {
+            this.relationFK__MASCOTAS__ESPECI__30F848ED = new global::System.Data.DataRelation("FK__MASCOTAS__ESPECI__30F848ED", new global::System.Data.DataColumn[] {
                         this.tableESPECIE.CODIGOColumn}, new global::System.Data.DataColumn[] {
                         this.tableMASCOTAS.ESPECIEColumn}, false);
-            this.Relations.Add(this.relationFK__MASCOTAS__ESPECI__4316F928);
-            this.relationFK__SEXO__CODIGO__45F365D3 = new global::System.Data.DataRelation("FK__SEXO__CODIGO__45F365D3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__MASCOTAS__ESPECI__30F848ED);
+            this.relationFK__SEXO__CODIGO__33D4B598 = new global::System.Data.DataRelation("FK__SEXO__CODIGO__33D4B598", new global::System.Data.DataColumn[] {
                         this.tableMASCOTAS.CODIGOColumn}, new global::System.Data.DataColumn[] {
                         this.tableSEXO.CODIGOColumn}, false);
-            this.Relations.Add(this.relationFK__SEXO__CODIGO__45F365D3);
+            this.Relations.Add(this.relationFK__SEXO__CODIGO__33D4B598);
             this.relationFK_ID_CLIENTE = new global::System.Data.DataRelation("FK_ID_CLIENTE", new global::System.Data.DataColumn[] {
                         this.tableCLIENTE.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableTEL_CLIENTE.ID_CLIENTEColumn}, false);
@@ -530,7 +530,7 @@ namespace TiernoTiranosaurioI {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+            TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -830,7 +830,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1139,7 +1139,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1417,7 +1417,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1691,7 +1691,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2015,7 +2015,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2211,7 +2211,7 @@ namespace TiernoTiranosaurioI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public MASCOTASRow AddMASCOTASRow(long CODIGO, byte[] IMAGEN, string NOMBRE, long PRECIO, int CANTIDAD, ESPECIERow parentESPECIERowByFK__MASCOTAS__ESPECI__4316F928) {
+            public MASCOTASRow AddMASCOTASRow(long CODIGO, byte[] IMAGEN, string NOMBRE, long PRECIO, int CANTIDAD, ESPECIERow parentESPECIERowByFK__MASCOTAS__ESPECI__30F848ED) {
                 MASCOTASRow rowMASCOTASRow = ((MASCOTASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CODIGO,
@@ -2220,8 +2220,8 @@ namespace TiernoTiranosaurioI {
                         PRECIO,
                         CANTIDAD,
                         null};
-                if ((parentESPECIERowByFK__MASCOTAS__ESPECI__4316F928 != null)) {
-                    columnValuesArray[5] = parentESPECIERowByFK__MASCOTAS__ESPECI__4316F928[0];
+                if ((parentESPECIERowByFK__MASCOTAS__ESPECI__30F848ED != null)) {
+                    columnValuesArray[5] = parentESPECIERowByFK__MASCOTAS__ESPECI__30F848ED[0];
                 }
                 rowMASCOTASRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMASCOTASRow);
@@ -2350,7 +2350,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2506,13 +2506,13 @@ namespace TiernoTiranosaurioI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SEXORow AddSEXORow(MASCOTASRow parentMASCOTASRowByFK__SEXO__CODIGO__45F365D3, string SEXO) {
+            public SEXORow AddSEXORow(MASCOTASRow parentMASCOTASRowByFK__SEXO__CODIGO__33D4B598, string SEXO) {
                 SEXORow rowSEXORow = ((SEXORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         SEXO};
-                if ((parentMASCOTASRowByFK__SEXO__CODIGO__45F365D3 != null)) {
-                    columnValuesArray[0] = parentMASCOTASRowByFK__SEXO__CODIGO__45F365D3[0];
+                if ((parentMASCOTASRowByFK__SEXO__CODIGO__33D4B598 != null)) {
+                    columnValuesArray[0] = parentMASCOTASRowByFK__SEXO__CODIGO__33D4B598[0];
                 }
                 rowSEXORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSEXORow);
@@ -2628,7 +2628,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2905,7 +2905,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3224,7 +3224,7 @@ namespace TiernoTiranosaurioI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TIERNOTIRANOSAURIODataSet1 ds = new TIERNOTIRANOSAURIODataSet1();
+                TIERNOTIRANOSAURIODataSet ds = new TIERNOTIRANOSAURIODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3583,11 +3583,11 @@ namespace TiernoTiranosaurioI {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public MASCOTASRow[] GetMASCOTASRows() {
-                if ((this.Table.ChildRelations["FK__MASCOTAS__ESPECI__4316F928"] == null)) {
+                if ((this.Table.ChildRelations["FK__MASCOTAS__ESPECI__30F848ED"] == null)) {
                     return new MASCOTASRow[0];
                 }
                 else {
-                    return ((MASCOTASRow[])(base.GetChildRows(this.Table.ChildRelations["FK__MASCOTAS__ESPECI__4316F928"])));
+                    return ((MASCOTASRow[])(base.GetChildRows(this.Table.ChildRelations["FK__MASCOTAS__ESPECI__30F848ED"])));
                 }
             }
         }
@@ -3795,10 +3795,10 @@ namespace TiernoTiranosaurioI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ESPECIERow ESPECIERow {
                 get {
-                    return ((ESPECIERow)(this.GetParentRow(this.Table.ParentRelations["FK__MASCOTAS__ESPECI__4316F928"])));
+                    return ((ESPECIERow)(this.GetParentRow(this.Table.ParentRelations["FK__MASCOTAS__ESPECI__30F848ED"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__MASCOTAS__ESPECI__4316F928"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__MASCOTAS__ESPECI__30F848ED"]);
                 }
             }
             
@@ -3840,11 +3840,11 @@ namespace TiernoTiranosaurioI {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SEXORow[] GetSEXORows() {
-                if ((this.Table.ChildRelations["FK__SEXO__CODIGO__45F365D3"] == null)) {
+                if ((this.Table.ChildRelations["FK__SEXO__CODIGO__33D4B598"] == null)) {
                     return new SEXORow[0];
                 }
                 else {
-                    return ((SEXORow[])(base.GetChildRows(this.Table.ChildRelations["FK__SEXO__CODIGO__45F365D3"])));
+                    return ((SEXORow[])(base.GetChildRows(this.Table.ChildRelations["FK__SEXO__CODIGO__33D4B598"])));
                 }
             }
         }
@@ -3889,10 +3889,10 @@ namespace TiernoTiranosaurioI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public MASCOTASRow MASCOTASRow {
                 get {
-                    return ((MASCOTASRow)(this.GetParentRow(this.Table.ParentRelations["FK__SEXO__CODIGO__45F365D3"])));
+                    return ((MASCOTASRow)(this.GetParentRow(this.Table.ParentRelations["FK__SEXO__CODIGO__33D4B598"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SEXO__CODIGO__45F365D3"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SEXO__CODIGO__33D4B598"]);
                 }
             }
         }
@@ -4373,7 +4373,7 @@ namespace TiernoTiranosaurioI {
         }
     }
 }
-namespace TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSet1TableAdapters {
+namespace TiernoTiranosaurioI.TIERNOTIRANOSAURIODataSetTableAdapters {
     
     
     /// <summary>
@@ -4539,7 +4539,7 @@ SELECT ID, NOMBRE, APELLIDO FROM CLIENTE WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4556,7 +4556,7 @@ SELECT ID, NOMBRE, APELLIDO FROM CLIENTE WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.CLIENTEDataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.CLIENTEDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4569,9 +4569,9 @@ SELECT ID, NOMBRE, APELLIDO FROM CLIENTE WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.CLIENTEDataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.CLIENTEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.CLIENTEDataTable dataTable = new TIERNOTIRANOSAURIODataSet1.CLIENTEDataTable();
+            TIERNOTIRANOSAURIODataSet.CLIENTEDataTable dataTable = new TIERNOTIRANOSAURIODataSet.CLIENTEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4579,14 +4579,14 @@ SELECT ID, NOMBRE, APELLIDO FROM CLIENTE WHERE (ID = @ID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.CLIENTEDataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.CLIENTEDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "CLIENTE");
         }
         
@@ -4903,7 +4903,7 @@ SELECT ID_FACTURA, ID_MASCOTA, CANTIDAD, TOTAL FROM DETALLE_FACTURA WHERE (ID_FA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4920,7 +4920,7 @@ SELECT ID_FACTURA, ID_MASCOTA, CANTIDAD, TOTAL FROM DETALLE_FACTURA WHERE (ID_FA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.DETALLE_FACTURADataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.DETALLE_FACTURADataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4933,9 +4933,9 @@ SELECT ID_FACTURA, ID_MASCOTA, CANTIDAD, TOTAL FROM DETALLE_FACTURA WHERE (ID_FA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.DETALLE_FACTURADataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.DETALLE_FACTURADataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.DETALLE_FACTURADataTable dataTable = new TIERNOTIRANOSAURIODataSet1.DETALLE_FACTURADataTable();
+            TIERNOTIRANOSAURIODataSet.DETALLE_FACTURADataTable dataTable = new TIERNOTIRANOSAURIODataSet.DETALLE_FACTURADataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4943,14 +4943,14 @@ SELECT ID_FACTURA, ID_MASCOTA, CANTIDAD, TOTAL FROM DETALLE_FACTURA WHERE (ID_FA
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.DETALLE_FACTURADataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.DETALLE_FACTURADataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "DETALLE_FACTURA");
         }
         
@@ -5235,7 +5235,7 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5252,7 +5252,7 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.DIREC_CLIENTEDataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.DIREC_CLIENTEDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5265,9 +5265,9 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.DIREC_CLIENTEDataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.DIREC_CLIENTEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.DIREC_CLIENTEDataTable dataTable = new TIERNOTIRANOSAURIODataSet1.DIREC_CLIENTEDataTable();
+            TIERNOTIRANOSAURIODataSet.DIREC_CLIENTEDataTable dataTable = new TIERNOTIRANOSAURIODataSet.DIREC_CLIENTEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5275,14 +5275,14 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.DIREC_CLIENTEDataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.DIREC_CLIENTEDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "DIREC_CLIENTE");
         }
         
@@ -5555,7 +5555,7 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5572,7 +5572,7 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.ESPECIEDataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.ESPECIEDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5585,9 +5585,9 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.ESPECIEDataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.ESPECIEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.ESPECIEDataTable dataTable = new TIERNOTIRANOSAURIODataSet1.ESPECIEDataTable();
+            TIERNOTIRANOSAURIODataSet.ESPECIEDataTable dataTable = new TIERNOTIRANOSAURIODataSet.ESPECIEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5595,14 +5595,14 @@ SELECT ID_CLIENTE, DIRECCION FROM DIREC_CLIENTE WHERE (DIRECCION = @DIRECCION) A
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.ESPECIEDataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.ESPECIEDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "ESPECIE");
         }
         
@@ -5892,7 +5892,7 @@ SELECT ID, ID_CLIENTE, TOTAL, IVA, CANTIDAD FROM FACTURA WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5909,7 +5909,7 @@ SELECT ID, ID_CLIENTE, TOTAL, IVA, CANTIDAD FROM FACTURA WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.FACTURADataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.FACTURADataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5922,9 +5922,9 @@ SELECT ID, ID_CLIENTE, TOTAL, IVA, CANTIDAD FROM FACTURA WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.FACTURADataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.FACTURADataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.FACTURADataTable dataTable = new TIERNOTIRANOSAURIODataSet1.FACTURADataTable();
+            TIERNOTIRANOSAURIODataSet.FACTURADataTable dataTable = new TIERNOTIRANOSAURIODataSet.FACTURADataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5932,14 +5932,14 @@ SELECT ID, ID_CLIENTE, TOTAL, IVA, CANTIDAD FROM FACTURA WHERE (ID = @ID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.FACTURADataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.FACTURADataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "FACTURA");
         }
         
@@ -6247,7 +6247,7 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6264,7 +6264,7 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.MASCOTASDataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.MASCOTASDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6277,9 +6277,9 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.MASCOTASDataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.MASCOTASDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.MASCOTASDataTable dataTable = new TIERNOTIRANOSAURIODataSet1.MASCOTASDataTable();
+            TIERNOTIRANOSAURIODataSet.MASCOTASDataTable dataTable = new TIERNOTIRANOSAURIODataSet.MASCOTASDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6287,14 +6287,14 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.MASCOTASDataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.MASCOTASDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "MASCOTAS");
         }
         
@@ -6615,7 +6615,7 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6632,7 +6632,7 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.SEXODataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.SEXODataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6645,9 +6645,9 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.SEXODataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.SEXODataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.SEXODataTable dataTable = new TIERNOTIRANOSAURIODataSet1.SEXODataTable();
+            TIERNOTIRANOSAURIODataSet.SEXODataTable dataTable = new TIERNOTIRANOSAURIODataSet.SEXODataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6655,14 +6655,14 @@ SELECT CODIGO, IMAGEN, NOMBRE, PRECIO, CANTIDAD, ESPECIE FROM MASCOTAS WHERE (CO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.SEXODataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.SEXODataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "SEXO");
         }
         
@@ -6935,7 +6935,7 @@ SELECT ID_CLIENTE, TELEFONO FROM TEL_CLIENTE WHERE (ID_CLIENTE = @ID_CLIENTE) AN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6952,7 +6952,7 @@ SELECT ID_CLIENTE, TELEFONO FROM TEL_CLIENTE WHERE (ID_CLIENTE = @ID_CLIENTE) AN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.TEL_CLIENTEDataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.TEL_CLIENTEDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6965,9 +6965,9 @@ SELECT ID_CLIENTE, TELEFONO FROM TEL_CLIENTE WHERE (ID_CLIENTE = @ID_CLIENTE) AN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.TEL_CLIENTEDataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.TEL_CLIENTEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.TEL_CLIENTEDataTable dataTable = new TIERNOTIRANOSAURIODataSet1.TEL_CLIENTEDataTable();
+            TIERNOTIRANOSAURIODataSet.TEL_CLIENTEDataTable dataTable = new TIERNOTIRANOSAURIODataSet.TEL_CLIENTEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6975,14 +6975,14 @@ SELECT ID_CLIENTE, TELEFONO FROM TEL_CLIENTE WHERE (ID_CLIENTE = @ID_CLIENTE) AN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.TEL_CLIENTEDataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.TEL_CLIENTEDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "TEL_CLIENTE");
         }
         
@@ -7255,7 +7255,7 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIOConnectionString;
+            this._connection.ConnectionString = global::TiernoTiranosaurioI.Properties.Settings.Default.TIERNOTIRANOSAURIO;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7272,7 +7272,7 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TIERNOTIRANOSAURIODataSet1.USUARIODataTable dataTable) {
+        public virtual int Fill(TIERNOTIRANOSAURIODataSet.USUARIODataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7285,9 +7285,9 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TIERNOTIRANOSAURIODataSet1.USUARIODataTable GetData() {
+        public virtual TIERNOTIRANOSAURIODataSet.USUARIODataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TIERNOTIRANOSAURIODataSet1.USUARIODataTable dataTable = new TIERNOTIRANOSAURIODataSet1.USUARIODataTable();
+            TIERNOTIRANOSAURIODataSet.USUARIODataTable dataTable = new TIERNOTIRANOSAURIODataSet.USUARIODataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7295,14 +7295,14 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1.USUARIODataTable dataTable) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet.USUARIODataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int Update(TIERNOTIRANOSAURIODataSet dataSet) {
             return this.Adapter.Update(dataSet, "USUARIO");
         }
         
@@ -7780,7 +7780,7 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(TIERNOTIRANOSAURIODataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(TIERNOTIRANOSAURIODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._cLIENTETableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CLIENTE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -7871,7 +7871,7 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(TIERNOTIRANOSAURIODataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(TIERNOTIRANOSAURIODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._cLIENTETableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CLIENTE.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -7953,7 +7953,7 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(TIERNOTIRANOSAURIODataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(TIERNOTIRANOSAURIODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._uSUARIOTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.USUARIO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -8059,7 +8059,7 @@ SELECT ID, NOMBRE, USUARIO, CONTRASEÑA, TIPO FROM USUARIO WHERE (ID = @ID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(TIERNOTIRANOSAURIODataSet1 dataSet) {
+        public virtual int UpdateAll(TIERNOTIRANOSAURIODataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
