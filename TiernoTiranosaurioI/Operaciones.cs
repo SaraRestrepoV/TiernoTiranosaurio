@@ -93,10 +93,18 @@ namespace TiernoTiranosaurioI
                 string ConsultaSQL = "SELECT * FROM MASCOTAS WHERE CODIGO =" + codigo;
                 objTabla = DB.consulta(ConsultaSQL, objConector);
                 if (objTabla.Read())
-                {
+                {                   
                     string imagen = objTabla[1].ToString();
-                    Image img = Image.FromFile(imagen);
-                    objAct.pcImagen.Image = img;
+
+                    if (string.IsNullOrEmpty(imagen)){
+                        objAct.pcImagen.Image = null;
+                     }
+                    else
+                    {
+                        Image img = Image.FromFile(imagen);
+                        objAct.pcImagen.Image = img;
+                       
+                    }
                 }
                 
                
