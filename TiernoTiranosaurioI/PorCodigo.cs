@@ -23,6 +23,8 @@ namespace TiernoTiranosaurioI
         public PorCodigo()
         {
             InitializeComponent();
+            
+
             Anuncio.Visible = false;
         }
 
@@ -35,10 +37,10 @@ namespace TiernoTiranosaurioI
                 cbCodigo.Enabled = false;
                 objConector = DB.conectar("TIERNOTIRANOSAURIO");
                 int codigo = Int32.Parse(cbCodigo.Text);
-                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;               
+                string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;
                 try
                 {
-                    objTabla = DB.consulta(ConsultaSQL, objConector);                  
+                    objTabla = DB.consulta(ConsultaSQL, objConector);
                     if (objTabla.Read())
                     {
                         string imagen = objTabla[1].ToString();
@@ -78,6 +80,7 @@ namespace TiernoTiranosaurioI
             {
                 MessageBox.Show("Error en la conexión " + ex.Message);
             }
+            
         }
 
         private void btBorrar_Click(object sender, EventArgs e)
@@ -104,5 +107,6 @@ namespace TiernoTiranosaurioI
             //this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
 
         }
+                       
     }
 }

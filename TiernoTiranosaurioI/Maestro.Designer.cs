@@ -38,12 +38,12 @@
             this.tsVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.tsCotizacion = new System.Windows.Forms.ToolStripMenuItem();
             this.tsFactura = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsInforme = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porCódigoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.porNombreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pbDino = new System.Windows.Forms.PictureBox();
             this.panelVerde = new System.Windows.Forms.Panel();
+            this.tsInforme = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDino)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +73,7 @@
             // 
             this.tsSalir.Image = ((System.Drawing.Image)(resources.GetObject("tsSalir.Image")));
             this.tsSalir.Name = "tsSalir";
-            this.tsSalir.Size = new System.Drawing.Size(180, 22);
+            this.tsSalir.Size = new System.Drawing.Size(96, 22);
             this.tsSalir.Text = "Salir";
             this.tsSalir.Click += new System.EventHandler(this.tsSalir_Click);
             // 
@@ -116,23 +116,17 @@
             // 
             this.tsCotizacion.Image = ((System.Drawing.Image)(resources.GetObject("tsCotizacion.Image")));
             this.tsCotizacion.Name = "tsCotizacion";
-            this.tsCotizacion.Size = new System.Drawing.Size(153, 22);
+            this.tsCotizacion.Size = new System.Drawing.Size(180, 22);
             this.tsCotizacion.Text = "Cotización";
+            this.tsCotizacion.Click += new System.EventHandler(this.tsCotizacion_Click);
             // 
             // tsFactura
             // 
             this.tsFactura.Image = ((System.Drawing.Image)(resources.GetObject("tsFactura.Image")));
             this.tsFactura.Name = "tsFactura";
-            this.tsFactura.Size = new System.Drawing.Size(153, 22);
+            this.tsFactura.Size = new System.Drawing.Size(180, 22);
             this.tsFactura.Text = "Factura";
             this.tsFactura.Click += new System.EventHandler(this.tsFactura_Click);
-            // 
-            // tsInforme
-            // 
-            this.tsInforme.Image = ((System.Drawing.Image)(resources.GetObject("tsInforme.Image")));
-            this.tsInforme.Name = "tsInforme";
-            this.tsInforme.Size = new System.Drawing.Size(153, 22);
-            this.tsInforme.Text = "Informe ventas";
             // 
             // consultarToolStripMenuItem
             // 
@@ -177,6 +171,13 @@
             this.panelVerde.Size = new System.Drawing.Size(993, 134);
             this.panelVerde.TabIndex = 2;
             // 
+            // tsInforme
+            // 
+            this.tsInforme.Image = ((System.Drawing.Image)(resources.GetObject("tsInforme.Image")));
+            this.tsInforme.Name = "tsInforme";
+            this.tsInforme.Size = new System.Drawing.Size(180, 22);
+            this.tsInforme.Text = "Informe ventas";
+            // 
             // Menú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,11 +210,11 @@
         private System.Windows.Forms.ToolStripMenuItem tsVentas;
         private System.Windows.Forms.ToolStripMenuItem tsCotizacion;
         private System.Windows.Forms.ToolStripMenuItem tsFactura;
-        private System.Windows.Forms.ToolStripMenuItem tsInforme;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porCódigoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem porNombreToolStripMenuItem1;
         private System.Windows.Forms.PictureBox pbDino;
         private System.Windows.Forms.Panel panelVerde;
+        private System.Windows.Forms.ToolStripMenuItem tsInforme;
     }
 }

@@ -33,9 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <HintPath>..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,36 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actualizar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Actualizar.Designer.cs">
-      <DependentUpon>Actualizar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Agregar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Agregar.Designer.cs">
       <DependentUpon>Agregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="clsImagen.cs" />
-    <Compile Include="DataSetFinal.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetFinal.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB.cs" />
-    <Compile Include="Eliminar.cs">
+    <Compile Include="Cotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Eliminar.Designer.cs">
-      <DependentUpon>Eliminar.cs</DependentUpon>
+    <Compile Include="Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB.cs" />
     <Compile Include="Facturacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpresionCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpresionCotizacion.Designer.cs">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -116,17 +108,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TIERNOTIRANOSAURIODataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Actualizar.resx">
-      <DependentUpon>Actualizar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Agregar.resx">
       <DependentUpon>Agregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar.resx">
-      <DependentUpon>Eliminar.cs</DependentUpon>
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpresionCotizacion.aa.resx">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpresionCotizacion.resx">
+      <DependentUpon>ImpresionCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -153,17 +148,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DataSetFinal.xsc">
-      <DependentUpon>DataSetFinal.xsd</DependentUpon>
-    </None>
-    <None Include="DataSetFinal.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetFinal.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSetFinal.xss">
-      <DependentUpon>DataSetFinal.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
