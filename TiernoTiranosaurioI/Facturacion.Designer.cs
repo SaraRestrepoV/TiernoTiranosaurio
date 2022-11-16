@@ -33,6 +33,8 @@ namespace TiernoTiranosaurioI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturacion));
             this.btBuscarCodigo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbFactura = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,7 +58,7 @@ namespace TiernoTiranosaurioI
             this.txEfectivo = new System.Windows.Forms.TextBox();
             this.txTotalPagar = new System.Windows.Forms.TextBox();
             this.txTotalIVA = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btVender = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txDevolucion = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -64,6 +66,8 @@ namespace TiernoTiranosaurioI
             this.btBuscarNombre = new System.Windows.Forms.Button();
             this.cbNombre = new System.Windows.Forms.ComboBox();
             this.gbFactura = new System.Windows.Forms.GroupBox();
+            this.txSubtotal = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btInsertar = new System.Windows.Forms.Button();
             this.txApellido = new System.Windows.Forms.TextBox();
@@ -92,11 +96,32 @@ namespace TiernoTiranosaurioI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel1.Controls.Add(this.lbFactura);
+            this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label10);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, -4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 62);
             this.panel1.TabIndex = 1;
+            // 
+            // lbFactura
+            // 
+            this.lbFactura.AutoSize = true;
+            this.lbFactura.Location = new System.Drawing.Point(540, 27);
+            this.lbFactura.Name = "lbFactura";
+            this.lbFactura.Size = new System.Drawing.Size(17, 20);
+            this.lbFactura.TabIndex = 23;
+            this.lbFactura.Text = "..";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(438, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(88, 20);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Factura N°:";
             // 
             // label10
             // 
@@ -142,6 +167,7 @@ namespace TiernoTiranosaurioI
             // 
             this.txPrecio.Location = new System.Drawing.Point(141, 121);
             this.txPrecio.Name = "txPrecio";
+            this.txPrecio.ReadOnly = true;
             this.txPrecio.Size = new System.Drawing.Size(141, 20);
             this.txPrecio.TabIndex = 6;
             // 
@@ -242,7 +268,7 @@ namespace TiernoTiranosaurioI
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(481, 32);
+            this.label7.Location = new System.Drawing.Point(481, 104);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 20);
             this.label7.TabIndex = 14;
@@ -252,7 +278,7 @@ namespace TiernoTiranosaurioI
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(481, 76);
+            this.label8.Location = new System.Drawing.Point(481, 32);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 20);
             this.label8.TabIndex = 15;
@@ -282,7 +308,7 @@ namespace TiernoTiranosaurioI
             this.txTotalPagar.BackColor = System.Drawing.SystemColors.MenuText;
             this.txTotalPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txTotalPagar.ForeColor = System.Drawing.Color.Crimson;
-            this.txTotalPagar.Location = new System.Drawing.Point(598, 32);
+            this.txTotalPagar.Location = new System.Drawing.Point(598, 104);
             this.txTotalPagar.Name = "txTotalPagar";
             this.txTotalPagar.ReadOnly = true;
             this.txTotalPagar.Size = new System.Drawing.Size(130, 20);
@@ -293,21 +319,21 @@ namespace TiernoTiranosaurioI
             this.txTotalIVA.BackColor = System.Drawing.SystemColors.MenuText;
             this.txTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txTotalIVA.ForeColor = System.Drawing.Color.Crimson;
-            this.txTotalIVA.Location = new System.Drawing.Point(598, 76);
+            this.txTotalIVA.Location = new System.Drawing.Point(598, 32);
             this.txTotalIVA.Name = "txTotalIVA";
             this.txTotalIVA.ReadOnly = true;
             this.txTotalIVA.Size = new System.Drawing.Size(130, 20);
             this.txTotalIVA.TabIndex = 19;
             // 
-            // button1
+            // btVender
             // 
-            this.button1.Location = new System.Drawing.Point(598, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 28);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Vender";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btVender.Location = new System.Drawing.Point(598, 334);
+            this.btVender.Name = "btVender";
+            this.btVender.Size = new System.Drawing.Size(105, 28);
+            this.btVender.TabIndex = 20;
+            this.btVender.Text = "Vender";
+            this.btVender.UseVisualStyleBackColor = true;
+            this.btVender.Click += new System.EventHandler(this.btVender_Click);
             // 
             // pictureBox1
             // 
@@ -373,10 +399,12 @@ namespace TiernoTiranosaurioI
             // 
             // gbFactura
             // 
+            this.gbFactura.Controls.Add(this.txSubtotal);
+            this.gbFactura.Controls.Add(this.label15);
             this.gbFactura.Controls.Add(this.dgvLista);
             this.gbFactura.Controls.Add(this.btBuscarNombre);
             this.gbFactura.Controls.Add(this.cbNombre);
-            this.gbFactura.Controls.Add(this.button1);
+            this.gbFactura.Controls.Add(this.btVender);
             this.gbFactura.Controls.Add(this.label9);
             this.gbFactura.Controls.Add(this.cbCodigo);
             this.gbFactura.Controls.Add(this.txEfectivo);
@@ -394,12 +422,34 @@ namespace TiernoTiranosaurioI
             this.gbFactura.Controls.Add(this.btBuscarCodigo);
             this.gbFactura.Controls.Add(this.label2);
             this.gbFactura.Controls.Add(this.label1);
+            this.gbFactura.Enabled = false;
             this.gbFactura.Location = new System.Drawing.Point(12, 207);
             this.gbFactura.Name = "gbFactura";
             this.gbFactura.Size = new System.Drawing.Size(783, 387);
             this.gbFactura.TabIndex = 28;
             this.gbFactura.TabStop = false;
             this.gbFactura.Text = "Factura";
+            // 
+            // txSubtotal
+            // 
+            this.txSubtotal.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txSubtotal.ForeColor = System.Drawing.Color.Crimson;
+            this.txSubtotal.Location = new System.Drawing.Point(598, 65);
+            this.txSubtotal.Name = "txSubtotal";
+            this.txSubtotal.ReadOnly = true;
+            this.txSubtotal.Size = new System.Drawing.Size(130, 20);
+            this.txSubtotal.TabIndex = 29;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(481, 65);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(73, 20);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "Subtotal:";
             // 
             // groupBox1
             // 
@@ -526,7 +576,7 @@ namespace TiernoTiranosaurioI
         private System.Windows.Forms.TextBox txEfectivo;
         private System.Windows.Forms.TextBox txTotalPagar;
         private System.Windows.Forms.TextBox txTotalIVA;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btVender;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txDevolucion;
@@ -549,5 +599,9 @@ namespace TiernoTiranosaurioI
         private System.Windows.Forms.TextBox txCedula;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbFactura;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txSubtotal;
+        private System.Windows.Forms.Label label15;
     }
 }
