@@ -58,6 +58,11 @@
     <Compile Include="Agregar.Designer.cs">
       <DependentUpon>Agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="BDVeterinariaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDVeterinariaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +172,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include=".editorconfig" />
+    <None Include="BDVeterinariaDataSet.xsc">
+      <DependentUpon>BDVeterinariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDVeterinariaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDVeterinariaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDVeterinariaDataSet.xss">
+      <DependentUpon>BDVeterinariaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

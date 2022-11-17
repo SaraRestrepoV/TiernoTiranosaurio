@@ -54,5 +54,15 @@ namespace TiernoTiranosaurioI.Properties {
                 return ((string)(this["TIERNOTIRANOSAURIO"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=BDVeterinaria;Integrated Security=True")]
+        public string BDVeterinariaConnectionString {
+            get {
+                return ((string)(this["BDVeterinariaConnectionString"]));
+            }
+        }
     }
 }

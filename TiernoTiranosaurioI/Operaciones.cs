@@ -36,6 +36,8 @@ namespace TiernoTiranosaurioI
 
         private void Operaciones_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'bDVeterinariaDataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter.Fill(this.bDVeterinariaDataSet.MASCOTAS);
 
         }
 
@@ -111,11 +113,11 @@ namespace TiernoTiranosaurioI
         private void dgvAnimales_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            codigoDG = dgvAnimales.Rows[e.RowIndex].Cells["CODIGO"].Value.ToString();
-            nombreDG = dgvAnimales.Rows[e.RowIndex].Cells["NOMBRE"].Value.ToString();
-            precioDG = dgvAnimales.Rows[e.RowIndex].Cells["PRECIO"].Value.ToString();
-            cantidadDG = dgvAnimales.Rows[e.RowIndex].Cells["CANTIDAD"].Value.ToString();
-            especieDG = dgvAnimales.Rows[e.RowIndex].Cells["ESPECIE"].Value.ToString();
+            codigoDG = dgvAnimales.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn1"].Value.ToString();
+            nombreDG = dgvAnimales.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn2"].Value.ToString();
+            precioDG = dgvAnimales.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn3"].Value.ToString();
+            cantidadDG = dgvAnimales.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn4"].Value.ToString();
+            especieDG = dgvAnimales.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn5"].Value.ToString();
         }
 
         private void dgvAnimales_CellContentClick(object sender, DataGridViewCellEventArgs e)

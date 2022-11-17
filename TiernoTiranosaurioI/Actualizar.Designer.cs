@@ -34,6 +34,7 @@
             this.txCantidad = new System.Windows.Forms.TextBox();
             this.txPrecio = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,11 +47,10 @@
             this.btSalir = new System.Windows.Forms.Button();
             this.btGuardar = new System.Windows.Forms.Button();
             this.btFoto = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcImagen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialogAbrir
@@ -86,6 +86,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(252, 149);
             this.panel2.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(43, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // txNombre
             // 
@@ -163,12 +173,13 @@
             // 
             // pcImagen
             // 
-            this.pcImagen.Location = new System.Drawing.Point(455, 206);
+            this.pcImagen.Location = new System.Drawing.Point(408, 206);
             this.pcImagen.Name = "pcImagen";
             this.pcImagen.Size = new System.Drawing.Size(323, 182);
             this.pcImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcImagen.TabIndex = 47;
             this.pcImagen.TabStop = false;
+            this.pcImagen.Click += new System.EventHandler(this.pcImagen_Click);
             // 
             // btSalir
             // 
@@ -178,6 +189,7 @@
             this.btSalir.Size = new System.Drawing.Size(144, 43);
             this.btSalir.TabIndex = 46;
             this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
             // btGuardar
             // 
@@ -187,25 +199,17 @@
             this.btGuardar.Size = new System.Drawing.Size(143, 43);
             this.btGuardar.TabIndex = 45;
             this.btGuardar.UseVisualStyleBackColor = true;
+            this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
             // 
             // btFoto
             // 
             this.btFoto.Image = ((System.Drawing.Image)(resources.GetObject("btFoto.Image")));
-            this.btFoto.Location = new System.Drawing.Point(534, 408);
+            this.btFoto.Location = new System.Drawing.Point(492, 408);
             this.btFoto.Name = "btFoto";
             this.btFoto.Size = new System.Drawing.Size(145, 42);
             this.btFoto.TabIndex = 44;
             this.btFoto.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiernoTiranosaurioI.Properties.Resources.Diseño_sin_título__4__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btFoto.Click += new System.EventHandler(this.btFoto_Click);
             // 
             // Actualizar
             // 
@@ -230,9 +234,9 @@
             this.Name = "Actualizar";
             this.Text = "Actualizar";
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcImagen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

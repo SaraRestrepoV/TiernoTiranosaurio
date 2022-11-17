@@ -26,6 +26,14 @@ namespace TiernoTiranosaurioI
 
         private void PorNomb_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'bDVeterinariaDataSet.ESPECIE' Puede moverla o quitarla según sea necesario.
+            this.eSPECIETableAdapter1.Fill(this.bDVeterinariaDataSet.ESPECIE);
+            // TODO: esta línea de código carga datos en la tabla 'bDVeterinariaDataSet.DETALLE_FACTURA' Puede moverla o quitarla según sea necesario.
+            this.dETALLE_FACTURATableAdapter1.Fill(this.bDVeterinariaDataSet.DETALLE_FACTURA);
+            // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.DETALLE_FACTURA' Puede moverla o quitarla según sea necesario.
+            this.dETALLE_FACTURATableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.DETALLE_FACTURA);
+            // TODO: esta línea de código carga datos en la tabla 'bDVeterinariaDataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter1.Fill(this.bDVeterinariaDataSet.MASCOTAS);
 
         }
 
@@ -33,9 +41,8 @@ namespace TiernoTiranosaurioI
         {
             try
             {
-                cbEspecie.Enabled = false;
-                cbNombre.Enabled = false;
-                objConector = DB.conectar("TIERNOTIRANOSAURIO");
+
+                objConector = DB.conectar("BDVETERINARIA");
                 string nombre = cbNombre.Text;
                 string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.NOMBRE = '" + nombre + "'";
                 try

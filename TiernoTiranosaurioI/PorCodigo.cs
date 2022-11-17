@@ -35,7 +35,7 @@ namespace TiernoTiranosaurioI
             try
             {
                 cbCodigo.Enabled = false;
-                objConector = DB.conectar("TIERNOTIRANOSAURIO");
+                objConector = DB.conectar("BDVETERINARIA");
                 int codigo = Int32.Parse(cbCodigo.Text);
                 string ConsultaSQL = "SELECT * FROM MASCOTAS M INNER JOIN ESPECIE E ON(M.ESPECIE = E.CODIGO) WHERE M.CODIGO =" + codigo;
                 try
@@ -101,11 +101,13 @@ namespace TiernoTiranosaurioI
 
         private void PorCodigo_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'bDVeterinariaDataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
+            this.mASCOTASTableAdapter1.Fill(this.bDVeterinariaDataSet.MASCOTAS);
             // TODO: esta línea de código carga datos en la tabla 'dataSetFinal.MASCOTAS' Puede moverla o quitarla según sea necesario.
             // TODO: esta línea de código carga datos en la tabla 'tIERNOTIRANOSAURIODataSet.MASCOTAS' Puede moverla o quitarla según sea necesario.
             //this.mASCOTASTableAdapter.Fill(this.tIERNOTIRANOSAURIODataSet.MASCOTAS);
 
         }
-                       
+
     }
 }

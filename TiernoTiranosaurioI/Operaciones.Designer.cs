@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Operaciones));
             this.dgvAnimales = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,15 +41,35 @@
             this.btEliminar = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
             this.btNuevo = new System.Windows.Forms.Button();
+            this.bDVeterinariaDataSet = new TiernoTiranosaurioI.BDVeterinariaDataSet();
+            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mASCOTASTableAdapter = new TiernoTiranosaurioI.BDVeterinariaDataSetTableAdapters.MASCOTASTableAdapter();
+            this.mASCOTASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAnimales)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bDVeterinariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAnimales
             // 
+            this.dgvAnimales.AutoGenerateColumns = false;
             this.dgvAnimales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAnimales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.dgvAnimales.DataSource = this.mASCOTASBindingSource1;
             this.dgvAnimales.Location = new System.Drawing.Point(65, 220);
             this.dgvAnimales.Name = "dgvAnimales";
             this.dgvAnimales.RowHeadersWidth = 51;
@@ -158,6 +179,55 @@
             this.btNuevo.UseVisualStyleBackColor = true;
             this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
             // 
+            // bDVeterinariaDataSet
+            // 
+            this.bDVeterinariaDataSet.DataSetName = "BDVeterinariaDataSet";
+            this.bDVeterinariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mASCOTASBindingSource
+            // 
+            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource.DataSource = this.bDVeterinariaDataSet;
+            // 
+            // mASCOTASTableAdapter
+            // 
+            this.mASCOTASTableAdapter.ClearBeforeFill = true;
+            // 
+            // mASCOTASBindingSource1
+            // 
+            this.mASCOTASBindingSource1.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource1.DataSource = this.bDVeterinariaDataSet;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "CODIGO";
+            this.dataGridViewTextBoxColumn1.HeaderText = "CODIGO";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOMBRE";
+            this.dataGridViewTextBoxColumn2.HeaderText = "NOMBRE";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "PRECIO";
+            this.dataGridViewTextBoxColumn3.HeaderText = "PRECIO";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "CANTIDAD";
+            this.dataGridViewTextBoxColumn4.HeaderText = "CANTIDAD";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ESPECIE";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ESPECIE";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
             // Operaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +251,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bDVeterinariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +282,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
         private System.Windows.Forms.DataGridViewTextBoxColumn ESPECIE;
+        private BDVeterinariaDataSet bDVeterinariaDataSet;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource;
+        private BDVeterinariaDataSetTableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource1;
     }
 }
